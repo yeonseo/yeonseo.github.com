@@ -1,5 +1,5 @@
 title:            얀버그의 초보개발자 일지
-description:      Describe your website here.
+description:      조금씩 꾸준히 성장일기
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -9,17 +9,17 @@ url:
 
 # Owner/author information
 owner:
-  name:           Yan Bug
+  name:           YanBug
   avatar:         avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          yulga_nara@naver.com
+  email:          yeonseo9105@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
-  facebook:       
-  github:         
+  facebook:       https://www.facebook.com/yulga.nara?ref=bookmarks
+  github:         https://github.com/yeonseo
   stackexchange:  
-  linkedin:       
-  instagram:      
+  linkedin:       https://www.linkedin.com/in/%EC%97%B0%EC%84%9C-%EB%82%A8-8092911a5/
+  instagram:      https://www.instagram.com/bboby_ggggg/?hl=ko
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
