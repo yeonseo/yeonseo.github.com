@@ -56,6 +56,71 @@ category : [Django]
 
 - board_reple : 댓글 기능 App (댓글 기능은 너무 커지니까 따로 App으로 구현한 다음 연결시켜주는 것이 좋겠네요~)
 
+
+``` python
+class AbstractItem(models.Model):
+
+    """ Abstract Item """
+
+    name = models.CharField(max_length=80)
+
+    class Meta:
+        abstract = True // migrate 작업 시, DB에 반영 안 하기 위한 옵션
+
+    def __str__(self):
+        return self.name
+
+
+class BoardType(AbstractItem):
+
+    """ BoardType Model Definition """
+
+    class Meta:
+        verbose_name = "게시물 종류"
+
+
+class BoardNoti(AbstractItem):
+
+    """ BoardNotification Model Definition """
+
+    class Meta:
+        verbose_name_plural = "공지 분류"
+
+
+class Photo(models.Model):
+
+    """ Photo Model Definition """
+
+    caption = models.CharField(max_length=80)
+    file = models.ImageField(upload_to="room_photos")
+    room = models.ForeignKey("Room", related_name="photos", on_delete=models.CASCADE)
+    user = models.ForeignKey("users.User", related_name="users", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.caption
+
+
+class Board(models.Model):
+
+    """ Board Model Definition """
+    user = models.ForeignKey(
+        "users.User", related_name="boards", on_delete=models.CASCADE
+    )
+    title = models.CharField(max_length=140)
+    content = models.TextField()
+    
+    ...
+
+    board_type = models.ForeignKey(
+        "BoardType", related_name="boards", on_delete=models.SET_NULL, null=True
+    )
+    board_noti = models.ForeignKey(
+        "BoardNoti", related_name="boards", on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.title
+```
+
 다음엔 App의 medel 작성, admin 화면에서 보기를 해보겠습니다.
 
 
