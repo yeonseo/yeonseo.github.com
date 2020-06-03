@@ -9,8 +9,8 @@ category : [Angular]
 * Development Env.
 * post date : 2020. 06. 02
 * OS : macOS Catalina 64bit, Windows 10 64bit
-* Node : 
-* Angular : 
+* Node : ''
+* Angular : ''
 * WebStorm : 2017.2.6
 * JRE: 1.8.0_152-release-915-b12 amd64
 * JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
@@ -31,7 +31,6 @@ Interceptor를 사용하여 할 수 있는 것들은 다음과 같습니다.
 
 지금 백앤드 측에서는 Django가 제공하는 rest-auth 를 통해서 유저가 로그인하면 유저 정보와 Token 값을 받고 있으므로 이를 활용하는 방법을 알아보겠습니다.
 
-</br></br></br>
 
 ## Interceptor Service 간단한 예제
 출처: https://alexband.tistory.com/54 [GoodBye World]
@@ -55,8 +54,6 @@ export class HttpInterceptorService implements HttpInterceptor {
     }
 }
 ```
-
-
 
 
 ``` ts
@@ -87,10 +84,6 @@ export class AppModule { }
 ```
 
 
-
-
-
-</br></br></br>
 
 ## 여러가지 상황을 고려한 코드 이해하기
 출처 : https://medium.com/angular-in-depth/top-10-ways-to-use-interceptors-in-angular-db450f8a62d6 [Michael Karén, medium]
