@@ -10,7 +10,7 @@ layout: default
 	{%- endif -%}
 	<!-- Posts List -->
 	{%- assign category = site.category | default: page.title -%}
-	{%- for post in site.category[category] -%}
+	{%- for _post in site.category[category] -%}
 	<!-- {%- for _post in _posts -%} -->
 		{%- capture _title -%}
 		<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{- _post.title -}}</a>
