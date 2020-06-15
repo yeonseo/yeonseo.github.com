@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{%- assign category = site.category -%}
-{%- assign _posts = site.posts | sort: 'date' | reverse -%}
+{%- assign category = site.categories -%}
+{%- assign _posts = site.categories[category] | sort: 'date' | reverse -%}
 {%- include header.html scrolly_nav=_posts -%}
 <!-- Main -->
 <div id="main">
@@ -10,8 +10,7 @@ layout: default
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Posts List -->
-	{%- for _post in site.category[category] -%}
-	<!-- {%- for _post in _posts -%} -->
+	{%- for _post in _posts -%}
 		{%- capture _title -%}
 		<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{- _post.title -}}</a>
 		{%- endcapture -%}
