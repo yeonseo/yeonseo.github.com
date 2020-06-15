@@ -1,7 +1,5 @@
 ---
-
 layout: category
-
-title: Personal.md
-
+title: Personal
+order: 10
 ---
