@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{% assign category = page.title | default: page.title %}
-{% assign _posts = site.category[category] | sort: 'date' | reverse %}
+{%- assign category = page.title | default: page.title -%}
+{%- assign _posts = site.category[category] | sort: 'date' | reverse -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
