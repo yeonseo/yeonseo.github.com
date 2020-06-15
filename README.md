@@ -1,3 +1,14 @@
+# YanBug의 공부기록장 👍
+
+https://yeonseo.github.io/
+
+조금씩 조금씩 성장 중인 주니어 개발자의 공부기록지입니다.🐾
+C, Java, Android, Html, css, php를 거쳐 잡다하게 배우고 있습니다. 현재는 Python+Django와 Angular+TS를 중점으로 배우는 중 입니다. 😁✨
+
+
+아래의 테마를 사용했습니다.
+
+
 # Prologue - Jekyll Theme
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
