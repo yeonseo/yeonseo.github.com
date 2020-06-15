@@ -1,6 +1,5 @@
 ---
-layout: blog
+layout: category
 title: Android
 order: 5
-hide: true
 ---

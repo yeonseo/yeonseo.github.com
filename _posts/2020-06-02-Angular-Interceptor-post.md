@@ -5,6 +5,7 @@ description: "Angular Interceptor로 로그인 상태 확인하기"
 tags: [Angular, TypeScript, Frontend, Web, TIL, Today I Leaned]
 comments : true
 category : [Angular]
+permalink: /angular/Angular-Interceptor-post
 ---
 * Development Env.
 * post date : 2020. 06. 02
