@@ -26,5 +26,5 @@ comments: false
 </div>
 
 {% assign category = page.category | default: page.title %}
-{% assign _posts = site.posts | sort: 'date' | reverse %}
+{% assign _posts = null %}
 {% include header.html scrolly_nav=_posts %}
