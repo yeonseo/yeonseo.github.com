@@ -2,8 +2,8 @@
 layout: default
 ---
 {% assign category = page.category | default: page.title %}
-{%- assign _posts = site.categories[category] | sort: 'date' | reverse -%}
-{%- include header.html scrolly_nav=_posts -%}
+{%- assign _post = site.categories[category] | sort: 'date' | reverse -%}
+{%- include header.html scrolly_nav=_post -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
