@@ -15,7 +15,7 @@ layout: default
 			{{- content -}}
 		</div>
 		{% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>
-      <!-- /#disqus_thread -->{% endif %}
+      	{% endif %}
 	</article>
 </div>
 {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
