@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
-
-
 <ul class="posts-list">
-  
 	{% assign category = page.category | default: page.title %}
-	{% for post in site.categories[category] %}
+	{% for posts in site.categories[category] %}
 		{%- assign _posts = site.posts | sort: 'date' | reverse -%}
 		{%- include header.html scrolly_nav=_posts -%}
 		<!-- Main -->
@@ -30,5 +27,4 @@ layout: default
 			{%- endfor -%}
 		</div>
 	{% endfor %}
-	
   </ul>
