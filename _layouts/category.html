@@ -2,9 +2,9 @@
 layout: default
 comments: false
 ---
-{% assign category = page.category | default: page.title %}
-{% assign _posts = site.categories[category] | sort: 'date' | reverse %}
-{% include header.html scrolly_nav=_posts %}
+{%- assign category = page.category | default: page.title -%}
+{%- assign _posts = site.categories.category | sort: 'date' | reverse -%}
+{%- include header.html scrolly_nav=_posts -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
