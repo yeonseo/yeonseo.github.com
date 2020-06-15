@@ -2,15 +2,15 @@
 layout: default
 ---
 {% assign category = page.title | default: page.title %}
-{%- assign _posts = site.categories[category] | sort: 'date' | reverse -%}
-{%- include header.html scrolly_nav=_posts -%}
+{%- assign _posts[category] = site.categories[category] | sort: 'date' | reverse -%}
+{%- include header.html scrolly_nav = _posts[category] -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Posts List -->
-  	{% for _post in _posts %}
+  	{% for _post in site.categories[category] %}
 		{%- capture _title -%}
 			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
 		{%- endcapture -%}
