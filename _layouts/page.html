@@ -14,9 +14,7 @@ layout: default
 			</header>
 	    {{- content -}}
 	  </div>
+	{% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>
+	<!-- /#disqus_thread -->{% endif %}
 	</article>
 </div>
-
-{% if page.comments != false and site.disqus_shortname %}
-<section id="disqus_thread">{% include disqus_comments.html %}</section>
-      <!-- /#disqus_thread -->{% endif %}
