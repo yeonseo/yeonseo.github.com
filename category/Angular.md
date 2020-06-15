@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: category
 title: Angular
 order: 6
 ---
