@@ -2,6 +2,6 @@
 
 layout: category
 
-title: Personal.md
+title: Personal
 
 ---
