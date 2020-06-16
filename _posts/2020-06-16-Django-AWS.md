@@ -4,7 +4,7 @@ title: AWS 환경설정 1
 description: "Django & angular를 배포해보자!"
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Django], [Django&Angualr]
+category : [Django, Django&Angualr]
 ---
 * Development Env.
 * post date : 2020. 06. 16
