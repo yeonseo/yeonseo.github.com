@@ -1,6 +1,6 @@
 ---
 layout: category
 title: Personal
-order: 10
+order: 12
 icon: fa-lock
 ---
