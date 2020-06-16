@@ -1,6 +1,6 @@
 ---
 layout: category
 title: Django&Angualr
-order: 7
+order: 8
 icon: fa-rocket
 ---

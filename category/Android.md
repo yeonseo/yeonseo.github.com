@@ -1,6 +1,6 @@
 ---
 layout: category
 title: Android
-order: 5
+order: 4
 icon: fa-android
 ---

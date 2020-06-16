@@ -1,12 +1,12 @@
 ---
-title: Reading List
+title: 번역/독서기록
 subtitle: a list of books I read
 layout: "page"
 icon: fa-book
-order: 4
+order: 20
 ---
 
-I love books! Here are some I'm reading now:
+데굴데굴 굴러가는 이끼 낀 돌 🎃
 
 1. Robert Burton: *The Anatomy of Melancholy*
 2. Robert Musil: *The Man Without Qualities*

@@ -1,6 +1,6 @@
 ---
 layout: category
 title: Java
-order: 4
+order: 3
 icon: fa-coffee
 ---
