@@ -26,3 +26,55 @@ category : [Django, DjangoAngualr]
 ```
 > pipenv run pipenv_to_requirements -f
 ```
+
+
+## DB modify
+``` python
+# .env
+DEBUG=Ture
+```
+
+```python
+# settings.py
+
+DEBUG = bool(os.environ.get("DEBUG"))
+
+...
+
+if DEBUG:
+
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
+    }
+else:
+
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
+    }
+```
+
+
+## postgresql setting
+
+
+``` python
+# .env
+MAILGUN_USERNAME=""
+MAILGUN_PASSWORD=""
+GH_ID=""
+GH_SECRET=""
+KAKAO_ID=""
+DEBUG=True
+
+RDS_HOST=""
+RDS_NAME=""
+RDS_USER=""
+RDS_PASSWORD=""
+```
+
