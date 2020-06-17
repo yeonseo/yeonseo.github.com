@@ -25,8 +25,8 @@ category : [Django, DjangoAngualr]
 ```
 > pipenv install awsebcli --dev 
 ```
-> Windows에 Python, pip 및 EB CLI 설치
-> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
+### Windows에 Python, pip 및 EB CLI 설치
+https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
 
 
 
@@ -77,8 +77,8 @@ Done!!
 
 ## Django 애플리케이션을 Elastic Beanstalk에 배포
 
-> Django 애플리케이션을 Elastic Beanstalk에 배포
-> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-django.html
+#### Django 애플리케이션을 Elastic Beanstalk에 배포
+https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-django.html
 
 ### .ebextensions 생성
 장고 프로젝트 폴더 안에, .ebextensions폴더 생성
@@ -120,7 +120,7 @@ https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:
 git이 설치되어 있는 경우 EB CLI에서는 git archive 명령을 사용하여 최신 .zip 명령의 내용에서 git commit 파일을 생성합니다.
 
 하지만 프로젝트 디렉터리에 .ebignore가 있으면 EB CLI가 소스 번들을 생성하기 위해 git 명령과 구문을 사용하지 않습니다. 즉 EB CLI는 .ebignore에 지정된 파일을 무시하고 다른 모든 파일을 포함시킵니다. 특히 커밋되지 않은 소스 파일을 포함시킵니다.
-> https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb3-deploy.html
+https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb3-deploy.html
 
 
 # todo
