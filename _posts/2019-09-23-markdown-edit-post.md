@@ -72,14 +72,17 @@ Files with the .md or .markdown extension
 ```
 
 ## 이미지
+상위에 폴더를 하나 만들어서 이미지를 추가하는 방법이 편하다.
+- post/
+  - images/
+    - 파일넣기!
 
 ```java
-![ex_screenshot](./image/2019-09-23-JavaFX-start-image1.png)
-Format: ![Alt Text](url)
+![여기에는 사진 별칭이나 설명](/post/images/2019-09-23-JavaFX-start-image1.png)
+Format: ![Alt 여기도 설명설명](url)
 ```
 
-![ex_screenshot](./image/2019-09-23-JavaFX-start-image1.png)
-Format: ![Alt Text](url)
+![ex_screenshot](/post/images/2019-09-23-JavaFX-start-image1.png)
 
 하위 폴더를 하나 만들어서 저장한 이미지를 불러오는 것이 맘 편하다. ㅇㅇ
 

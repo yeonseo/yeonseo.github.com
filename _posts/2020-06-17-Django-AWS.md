@@ -137,7 +137,7 @@ https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk/home?region=ap-no
     RDS_USER="your user"
     RDS_PASSWORD="your pass"
     ```
-![ex_screenshot](./image/2020-06-17_100043.png)
+![ex_screenshot](/post/images/2020-06-17_100043.png)
 
 작성하고 저장하면, DB가 적용 중이라고 표시가 된다. 다 완료가 되면, requirements 등의 변경사항을 커밋하고 eb deploy를 해준다. deploy가 끝나면 eb logs를 통해 서버의 상태를 살펴볼 수 있는데, 패키지도 설치되었고 여러가지 바빴다는 것이 보인다. 오.
 아직 애러가 남았다. ^_^

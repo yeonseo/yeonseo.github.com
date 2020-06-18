@@ -111,11 +111,12 @@ end
 * 창을 닫으면 stop을 실행
 
 
-![ex_screenshot](./images/2019-09-23-JavaFX-start-image2.png)
+![java_fx_thread](/post/images/2019-09-23-JavaFX-start-image2.png)
 
 main Thread가 JavaFX로 직접 데이터를 줄 수 없기 때문에 JavaFX Launch를 통해 데이터를 전달 할 수있다. 다른 방법으로는 데이터 베이스를 이용할 수 도 있지만 여기서는 다루지 않겠다. Parameter 객체에 저장된 데이터는 컬랙션 프레임워크의 List와 Map으로 가져올 수 있다. Run Configurations -> Arguments 에서 Program arguments로 값을 주어 테스트 해 보았다.
 
-![ex_screenshot](./images/2019-09-23-JavaFX-start-image1.png)
+![ex_screenshot](/post/images/2019-09-23-JavaFX-start-image1.png)
+Format: ![Alt Text](url)
 
 ```java
 public class AppMain extends Application{
