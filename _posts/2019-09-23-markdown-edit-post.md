@@ -74,11 +74,11 @@ Files with the .md or .markdown extension
 ## 이미지
 
 ```java
-![JavaFX Life Cycle](./image/2019-09-23-JavaFX-start-image1.png)
+![ex_screenshot](./image/2019-09-23-JavaFX-start-image1.png)
 Format: ![Alt Text](url)
 ```
 
-![JavaFX Life Cycle](./image/2019-09-23-JavaFX-start-image1.png)
+![ex_screenshot](./image/2019-09-23-JavaFX-start-image1.png)
 Format: ![Alt Text](url)
 
 하위 폴더를 하나 만들어서 저장한 이미지를 불러오는 것이 맘 편하다. ㅇㅇ
