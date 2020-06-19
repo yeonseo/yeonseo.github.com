@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Personal
+title: Plant
 order: 102
 icon: fa-envira
 ---
