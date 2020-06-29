@@ -2,5 +2,5 @@
 layout: category
 title: NodeJS
 order: 9
-icon: fa-paw
+icon: fa-star
 ---
