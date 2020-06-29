@@ -31,8 +31,8 @@ NPM Project 시작하기
 ---
 
 ![nodejs_logo](/post/images/nodejs_logo.jpg)
-# NodeJS
 
+# NodeJS
 
 > Node.js는 확장성 있는 네트워크 애플리케이션(특히 서버 사이드) 개발에 사용되는 소프트웨어 플랫폼이다. 작성 언어로 자바스크립트를 활용하며 Non-blocking I/O와 단일 스레드 이벤트 루프를 통한 높은 처리 성능을 가지고 있다.
 [출처](https://ko.wikipedia.org/wiki/Node.js)
@@ -44,9 +44,9 @@ NPM Project 시작하기
 개발자들이 코드를 공유하고 재생산하기 위해서 만들어진 것!
 
  
- ## npm init (node project create)
+## npm init (node project create)
 
- ```
+```
  > mkdir nodeServerVimeo
  > cd .\nodeServerVimeo\
  \nodeServerVimeo > npm init
@@ -99,6 +99,7 @@ Is this OK? (yes) yes
 ```
 
 package.json, key와 value로 이루어진 프로젝트 정보 파일이 생성됨
+
 --save : package.json에 설치한 라이브러리를 저장하도록 하는 명령어
 
 ```
