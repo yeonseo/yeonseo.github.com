@@ -12,6 +12,9 @@ category : [NodeJS]
 프로젝트에서 NodeJS를 이용해서 진행하게 되었다. 안드로이드, ios(아이폰), 웹에서 동시에 구동되도록 개발한다고 들었다.
 NodeJS / Cordoba / 프론트앤드는 아직 미정
 
+NPM Project 시작하기
+[https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C/lecture/6118](https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C/lecture/6118)
+
 <p></p>
 <p></p>
 <p></p>
@@ -136,6 +139,7 @@ start! express server on port 3000
 ```
 
 ```js
+// app.js
 var exp = require('express')
 var app = exp()
 app.listen(3000, function() {
