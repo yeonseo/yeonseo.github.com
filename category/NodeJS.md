@@ -1,6 +1,6 @@
 ---
 layout: category
 title: etc
-order: 51
+order: 9
 icon: fa-paw
 ---
