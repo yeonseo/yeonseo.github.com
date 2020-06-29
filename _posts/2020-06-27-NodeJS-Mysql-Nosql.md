@@ -24,6 +24,7 @@ DB는 RDS와 Nosql을 사용하기로 했습니다. RDB는 Mysql을 사용하고
 * nodemon : 2.0.4
 ---
 
+
 ![nodejs_logo](/post/images/nodejs_logo.jpg)
 
 # NodeJS에서 Mysql 연동하기 
