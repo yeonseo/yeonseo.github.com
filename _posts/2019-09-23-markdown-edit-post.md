@@ -95,7 +95,7 @@ http://github.com - automatic!
 ```
 
 http://github.com - automatic!
-[GitHub] (http://github.com)
+[GitHub](http://github.com)
 
 ```java
 Automatic linking for URLs

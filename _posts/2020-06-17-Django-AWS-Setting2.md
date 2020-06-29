@@ -4,7 +4,7 @@ title: AWS 환경설정 2
 description: "Django & angular를 배포해보자!"
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Django, DjangoAngualr]
+category : [Django, Django&Angualr]
 ---
 
 
@@ -123,7 +123,7 @@ else:
 
 ### (2) aws에서 RDS 생성
 aws에서 제공하는 DB서비스를 통해 데이터베이스를 생성합니다.
-https://ap-northeast-2.console.aws.amazon.com/rds/home?region=ap-northeast-2#
+[https://ap-northeast-2.console.aws.amazon.com/rds/home?region=ap-northeast-2#](https://ap-northeast-2.console.aws.amazon.com/rds/home?region=ap-northeast-2#)
 
 좌측 사이드바, 데이터 베이스 -> 데이터 베이스 생성
 * Postgresql 선택
@@ -195,7 +195,8 @@ else:
 
 ### (4) os 환경변수에 Postgresql 정보 입력
 
-https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk/home?region=ap-northeast-2#/welcome
+[https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk/home?region=ap-northeast-2#/welcome](https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk/home?region=ap-northeast-2#/welcome)
+
 
 1. Elastic Beanstalk -> applocations 클릭
 2. 어플리케이션 이름 클릭 -> 환경이름 클릭

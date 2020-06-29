@@ -4,7 +4,7 @@ title: AWS 환경설정 1
 description: "Django & angular를 배포해보자!"
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Django, DjangoAngualr]
+category : [Django, Django&Angualr]
 ---
 
 
@@ -13,7 +13,7 @@ category : [Django, DjangoAngualr]
 
 AWS의 Elastic Beanstalk이라는 서비스는 기본적으로 PC환경을 만들어줍니다. 자동차로 예를 들어본다면 아무 옵션없는 깡통 상태를 만들어준다고 볼 수 있습니다. 깡통에 django, django-rest 등등을 설치부터 하면 됩니다! PC 환경설정에 친숙하지 않다면 이것 역시 쉽지는 않게 다가 올테지만, 조금씩 하다보면 됩니다. 🧐
 
-본 포스팅은 https://academy.nomadcoders.co/[Nomad Coders] 의 "[풀스택] 에어비엔비 클론 코딩" 을 기초로 하여 개인 프로젝트를 진행한 과정을 기초로 작성되었습니다. 더 자세한 설명이 궁금하신 분은 노마드 코더의 강의를 들어보세요! 많은 도움을 받으실겁니다 :-)
+본 포스팅은 [https://academy.nomadcoders.co/](https://academy.nomadcoders.co/)의 "[풀스택] 에어비엔비 클론 코딩" 을 기초로 하여 개인 프로젝트를 진행한 과정을 기초로 작성되었습니다. 더 자세한 설명이 궁금하신 분은 노마드 코더의 강의를 들어보세요! 많은 도움을 받으실겁니다 :-)
 
 <p></p>
 <p></p>
@@ -43,7 +43,7 @@ AWS의 Elastic Beanstalk이라는 서비스는 기본적으로 PC환경을 만�
 ```
 
 #### Windows에 Python, pip 및 EB CLI 설치
-https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
+[https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html)
 
 <p></p>
 <p></p>
@@ -64,7 +64,7 @@ https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-win
 ### (3). AWS IAM user 생성
 IAM(https://aws.amazon.com/ko/iam/?nc2=type_a)으로 가서 
 -> AWS 계정 생성
-https://console.aws.amazon.com/iam/home#/users
+[https://console.aws.amazon.com/iam/home#/users](https://console.aws.amazon.com/iam/home#/users)
 사용자 -> 사용자 추가
 
 * 사용자 이름 입력
@@ -114,7 +114,7 @@ Done!!
 ## 2. Django 애플리케이션을 Elastic Beanstalk에 배포
 
 #### Django 애플리케이션을 Elastic Beanstalk에 배포
-https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-django.html
+[https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-django.html](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-django.html)
 
 <p></p>
 <p></p>
@@ -145,10 +145,10 @@ option_settings:
 > eb create (각자 프로젝트명)
 ```
 위 작업이 끝나면 서버가 작업중인 것을 확인할 수 있음
-https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk
+[https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk](https://ap-northeast-2.console.aws.amazon.com/elasticbeanstalk)
 
 ec2에 가서 인스턴스 생성 확인하기
-https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:
+[https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:)
 
 
 6. 파일을 저장한 후 eb deploy를 실행해 애플리케이션을 배포합니다. eb deploy를 실행하면 EB CLI가 프로젝트 디렉터리의 콘텐츠를 번들링한 후 이를 환경에 배포합니다.
@@ -160,7 +160,7 @@ https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:
 git이 설치되어 있는 경우 EB CLI에서는 git archive 명령을 사용하여 최신 .zip 명령의 내용에서 git commit 파일을 생성합니다.
 
 하지만 프로젝트 디렉터리에 .ebignore가 있으면 EB CLI가 소스 번들을 생성하기 위해 git 명령과 구문을 사용하지 않습니다. 즉 EB CLI는 .ebignore에 지정된 파일을 무시하고 다른 모든 파일을 포함시킵니다. 특히 커밋되지 않은 소스 파일을 포함시킵니다.
-https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb3-deploy.html
+[https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb3-deploy.html](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb3-deploy.html)
 
 <p></p>
 <p></p>

@@ -4,7 +4,7 @@ title: AWS 환경설정 3
 description: "Django & angular를 배포해보자!"
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Django, DjangoAngualr]
+category : [Django, Django&Angualr]
 ---
 
 
@@ -32,8 +32,7 @@ category : [Django, DjangoAngualr]
 
 # AWS CLI Setting 1
 
-
-https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#SecurityGroups:search=sg-c4ac9aa1
+[https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#SecurityGroups:search=sg-c4ac9aa1](https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#SecurityGroups:search=sg-c4ac9aa1)
 
 ## aloow host 바꿔주기
 
