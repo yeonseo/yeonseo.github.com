@@ -74,8 +74,5 @@ router.get('/', function(req, res, next) {
     console.log('main')
     res.sendFile(path.join(__dirname, "../public/main.html"))
 })
-
 module.exports = router;
-
 ```
-
