@@ -16,12 +16,14 @@ DB는 RDS와 Nosql을 사용하기로 했습니다. RDB는 Mysql을 사용하고
 <p></p>
 
 ---
+
 * Development Env.
 * post date : 2020. 06. 27
 * OS : macOS Catalina 64bit, Windows 10 64bit
 * Nodeserver : 1.0.0
-* express : 4.17.1
-* nodemon : 2.0.4
+* Express : 4.17.1
+* Nodemon : 2.0.4
+
 ---
 
 

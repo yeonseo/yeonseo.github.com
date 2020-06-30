@@ -18,12 +18,14 @@ View engine을 활용한 응답처리
 <p></p>
 
 ---
+
 * Development Env.
 * post date : 2020. 06. 26
 * OS : macOS Catalina 64bit, Windows 10 64bit
 * Nodeserver : 1.0.0
-* express : 4.17.1
-* nodemon : 2.0.4
+* Express : 4.17.1
+* Nodemon : 2.0.4
+
 ---
 
 

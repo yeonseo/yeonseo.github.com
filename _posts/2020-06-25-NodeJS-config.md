@@ -22,12 +22,14 @@ NPM Project 시작하기
 <p></p>
 
 ---
+
 * Development Env.
 * post date : 2020. 06. 25
 * OS : macOS Catalina 64bit, Windows 10 64bit
 * Nodeserver : 1.0.0
-* express : 4.17.1
-* nodemon : 2.0.4
+* Express : 4.17.1
+* Nodemon : 2.0.4
+
 ---
 
 

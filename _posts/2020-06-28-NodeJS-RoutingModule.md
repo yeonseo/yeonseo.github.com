@@ -16,12 +16,14 @@ category : [NodeJS]
 <p></p>
 
 ---
+
 * Development Env.
-* post date : 2020. 06. 27
+* post date : 2020. 06. 28
 * OS : macOS Catalina 64bit, Windows 10 64bit
 * Nodeserver : 1.0.0
-* express : 4.17.1
-* nodemon : 2.0.4
+* Express : 4.17.1
+* Nodemon : 2.0.4
+
 ---
 
 
@@ -77,3 +79,6 @@ router.get('/', function(req, res, next) {
 })
 module.exports = router;
 ```
+
+이런식으로 모듈화를 하면, app.js를 심플하게 관리할 수 있습니다.
+[github - commit](https://github.com/yeonseo/node-server/commit/3131cd90a6cd34f83c0b567cf32fbbe4f068bb96)
