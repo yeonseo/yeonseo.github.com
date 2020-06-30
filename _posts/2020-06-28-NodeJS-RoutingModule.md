@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NodeJS Routing 모듈화
+title: NodeJS Routing 모듈화 및 리책토링
 description: "NodeJS를 백앤드로 사용하기"
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
@@ -82,3 +82,25 @@ module.exports = router;
 
 이런식으로 모듈화를 하면, app.js를 심플하게 관리할 수 있습니다.
 [github - commit](https://github.com/yeonseo/node-server/commit/3131cd90a6cd34f83c0b567cf32fbbe4f068bb96)
+
+
+
+# NodeJS Routing 리팩토링
+
+라우터 하위에 index.js에서 하위의 라우터를 관리하도록 수정하겠습니다.
+
+
+```
+다음과 같은 구조로 작성합니다.
+│  index.js
+│  
+├─main
+│      router_main.js
+│      
+└─user
+        router_user.js
+
+```
+
+[github - commit](https://github.com/yeonseo/node-server/commit/278b0209bb83d9c241c67faa11423e3e8d1af22e)
+
