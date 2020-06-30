@@ -2,5 +2,5 @@
 layout: category
 title: Plant
 order: 103
-icon: fa-envira
+icon: fa-leaf
 ---

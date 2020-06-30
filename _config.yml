@@ -30,7 +30,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 얀버그의 개발일지
+title: Yanbug's Dev
 subtitle: 우당탕탕 개발을 하자
 disqus_shortname: yeonseo
 description: >- # this means to ignore newlines until "baseurl:"
@@ -38,7 +38,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   HTML5 UP's sleek, responsive site template Prologue.
 author: Yeonseo Nam
 email: yeonseo9105@gmail.com
-avatar: assets/images/avatar.jpg
+avatar: assets/images/myMac.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
