@@ -2,7 +2,8 @@
 layout: default
 comments: false
 ---
-
+{%- assign _categorys = site.category | sort: 'date' | reverse -%}
+{%- include header.html scrolly_nav=_categorys -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
@@ -25,6 +26,4 @@ comments: false
 	{% endfor %}
 </div>
 
-{% assign category = page.category | default: page.title %}
-{% assign _posts = null %}
-{% include header.html scrolly_nav=_posts %}
+
