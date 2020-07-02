@@ -3,7 +3,7 @@ title: 번역/독서기록
 subtitle: a list of books I read
 layout: "page"
 icon: fa-book
-order: 20
+order: 200
 ---
 
 데굴데굴 굴러가는 이끼 낀 돌 🎃
