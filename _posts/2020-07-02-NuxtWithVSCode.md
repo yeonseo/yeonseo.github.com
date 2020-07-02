@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Studio Cove로 NuxtJS 디버깅하기
+title: Visual Studio Code로 NuxtJS 디버깅하기
 description: "NuxtJS를 프론트앤드로 사용하기"
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
@@ -26,10 +26,7 @@ Visual Studio Code에서 Nuxt JS를 디버깅 할 수 있도록 환경설정을 
 
 ![nuxtjs_logo](/post/images/NuxtJS_Logo.png)
 
-# 
-
-
-[번역]
+# Debugging with Chrome 🐣
 
 
 ## 1. debugger for chrome 설치
