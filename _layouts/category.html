@@ -2,7 +2,7 @@
 layout: default
 comments: false
 ---
-{%- assign _categorys = site.category | sort: 'date' | reverse -%}
+{%- assign _categorys = site.categories | sort: 'date' | reverse -%}
 {%- include header.html scrolly_nav=_categorys -%}
 <!-- Main -->
 <div id="main">
