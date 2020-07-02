@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NodeJS Routing 모듈화 및 리책토링
+title: NodeJS Routing 모듈화 및 리팩토링
 description: "NodeJS를 백앤드로 사용하기"
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
