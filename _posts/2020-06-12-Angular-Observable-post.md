@@ -6,15 +6,6 @@ tags: [Angular, TypeScript, Observabel, Frontend, Web, TIL, Today I Leaned]
 comments : true
 category : [Angular]
 ---
-* Development Env.
-* post date : 2020. 06. 12
-* OS : macOS Catalina 64bit, Windows 10 64bit
-* Node : ''
-* Angular : ''
-* WebStorm : 2017.2.6
-* JRE: 1.8.0_152-release-915-b12 amd64
-* JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
-
 
 서버에 요청을 보낼 시, 발행할 수 있는 에러는 여러 가지가 있습니다. 회원가입을 하는데 서버에서 필요한 데이터는 ID, password, email인데 사용자가 ID와 password만 적고 email이 귀찮아서 적지 않는다면 에러를 뱉어내죠. 사용자 입장에선 화면이 아무것도 변하지 않고 회원가입도 안 되기 때문에 무엇이 잘못된지 인지하지 못합니다. 또, 게시물을 작성할 때도 같습니다. 제목과 내용이 필요한데, 제목을 적지 않았을 경우 적절한 조치를 취해주지 않으면 사용자는 무엇을 개선해야할지 정확히 모르기 때문에 제목을 입력하라고 알려주어거나 코드 상에서 기본값을 정해주어야 하죠.
 
@@ -25,6 +16,21 @@ category : [Angular]
 ## 참고
 > MDN HTTP 상태 코드
 https://developer.mozilla.org/ko/docs/Web/HTTP/Status
+
+<br/><br/><br/><br/><br/>
+
+---
+
+* Development Env.
+* post date : 2020. 06. 12
+* OS : macOS Catalina 64bit, Windows 10 64bit
+* Node : ''
+* Angular : ''
+* WebStorm : 2017.2.6
+* JRE: 1.8.0_152-release-915-b12 amd64
+* JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+
+---
 
 
 에러가 발생하면, Requst로 에러 정보가 담겨옵니다. 이 정보는 개발자 도구 창에서 볼 수 있습니다. 에러 코드에 대해서 컨트롤 하는 것은 초반부터 하는 것은 권장되지 않고, 개발이 완성될 즘에 처리를 합니다. 저는 게시판과 회원가입 기능이 거의 완성되었기 때문에 400, 403 에러에 대해서 Interceptor에서 처리를 할 수 있도록 구현하기로 했습니다.

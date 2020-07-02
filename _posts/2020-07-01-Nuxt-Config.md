@@ -1,18 +1,13 @@
 ---
 layout: post
-title: NuxtJS 설치 밎 환경 구성
-description: "NuxtJS를 프론트앤드로 사용하기"
+title: [번역] Visual Studio Cove로 NuxtJS 디버깅하기
+description: "NuxtJS를 잘 사용해보자"
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
 category : [NuxtJS]
 ---
 
-
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<br/><br/><br/><br/><br/>
 
 ---
 

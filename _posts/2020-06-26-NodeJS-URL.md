@@ -11,11 +11,7 @@ URL Routing 처리
 [https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C/lecture/6120](https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C/lecture/6120)
 
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<br/><br/><br/><br/><br/>
 
 ---
 

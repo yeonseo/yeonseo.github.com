@@ -6,8 +6,15 @@ tags: [Angular, TypeScript, Frontend, Web, TIL, Today I Leaned]
 comments : true
 category : [Angular]
 ---
+
+사용자가 로그인을 성공했을 시 생성되는 Token 값을 이용해서 페이지 접근권한을 관리할 때 Interceptor라는 것을 사용한다고 들었습니다. 실제로는 localStorage에 저장한 token값을 사용하여 임시프로젝트를 수행했습니다. 나중에 Interceptor를 사용할 수도 있다고 생각되어서 코드 흐름을 파악하는 정도로만 기록해두려고 합니다.
+
+<br/><br/><br/><br/><br/>
+
+---
+
 * Development Env.
-* post date : 2020. 06. 02
+* post date : 2020. 06. 12
 * OS : macOS Catalina 64bit, Windows 10 64bit
 * Node : ''
 * Angular : ''
@@ -15,8 +22,11 @@ category : [Angular]
 * JRE: 1.8.0_152-release-915-b12 amd64
 * JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
 
-사용자가 로그인을 성공했을 시 생성되는 Token 값을 이용해서 페이지 접근권한을 관리할 때 Interceptor라는 것을 사용한다고 들었습니다. 실제로는 localStorage에 저장한 token값을 사용하여 임시프로젝트를 수행했습니다. 나중에 Interceptor를 사용할 수도 있다고 생각되어서 코드 흐름을 파악하는 정도로만 기록해두려고 합니다.
+---
 
+<br/><br/><br/><br/><br/>
+
+이전의 포스팅에서 사용자가 가입할 수 있고 게시판이 있는 사이트를 만들어본다고 했습니다. 그래서 'users' App과 'boards' App이 필요했고, 다음 명령어를 통해서 같이 추가했습니다.
 # Interceptors
 > HttpInterceptor was introduced with Angular 4.3. It provides a way to intercept HTTP requests and responses to transform or handle them before passing them along.
 

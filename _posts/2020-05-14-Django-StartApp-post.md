@@ -6,6 +6,18 @@ tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Django]
 ---
+
+
+본 포스팅은 https://academy.nomadcoders.co/[Nomad Coders] 의 "[풀스택] 에어비엔비 클론 코딩" 을 기초로 하여 개인 프로젝트를 진행한 과정을 담고 있습니다. 더 자세한 설명이 궁금하신 분은 노마드 코더의 강의를 들어보세요! 많은 도움을 받으실겁니다 :-)
+
+
+<br/><br/><br/><br/><br/>
+
+이전의 포스팅에서 사용자가 가입할 수 있고 게시판이 있는 사이트를 만들어본다고 했습니다. 그 구조에 대해서 생각을 해보겠습니다.
+
+
+---
+
 * Development Env.
 * post date : 2020. 05. 14
 * OS : macOS Catalina 64bit, Windows 10 64bit
@@ -15,12 +27,12 @@ category : [Django]
 * JRE : 1.8.0_152-release-1343-b28 amd64
 * JVM : OpenJDK 64-Bit Server VM by 
 
-본 포스팅은 https://academy.nomadcoders.co/[Nomad Coders] 의 "[풀스택] 에어비엔비 클론 코딩" 을 기초로 하여 개인 프로젝트를 진행한 과정을 담고 있습니다. 더 자세한 설명이 궁금하신 분은 노마드 코더의 강의를 들어보세요! 많은 도움을 받으실겁니다 :-)
+---
 
+<br/><br/><br/><br/><br/>
 
+ 'users' App과 'boards' App이 필요했고, 다음 명령어를 통해서 같이 추가했습니다.
 
-# Django App
-이전의 포스팅에서 사용자가 가입할 수 있고 게시판이 있는 사이트를 만들어본다고 했습니다. 그래서 'users' App과 'boards' App이 필요했고, 다음 명령어를 통해서 같이 추가했습니다.
 
 ``` commend
 > django-admin startapp users

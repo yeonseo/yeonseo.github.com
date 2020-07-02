@@ -15,11 +15,7 @@ AWS의 Elastic Beanstalk이라는 서비스는 기본적으로 PC환경을 만�
 
 본 포스팅은 [https://academy.nomadcoders.co/](https://academy.nomadcoders.co/)의 "[풀스택] 에어비엔비 클론 코딩" 을 기초로 하여 개인 프로젝트를 진행한 과정을 기초로 작성되었습니다. 더 자세한 설명이 궁금하신 분은 노마드 코더의 강의를 들어보세요! 많은 도움을 받으실겁니다 :-)
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<br/><br/><br/><br/><br/>
 
 ---
 * Development Env.
