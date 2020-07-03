@@ -2,7 +2,9 @@
 layout: default
 comments: false
 ---
-
+{% assign category = page.category | default: page.title %}
+{% assign _posts = null %}
+{% include header.html scrolly_nav=_posts %}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
@@ -24,7 +26,3 @@ comments: false
 		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 	{% endfor %}
 </div>
-
-{% assign category = page.category | default: page.title %}
-{% assign _posts = null %}
-{% include header.html scrolly_nav=_posts %}

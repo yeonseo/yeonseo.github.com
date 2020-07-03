@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Angular
+title: Kotlin
 order: 11
 icon: fa-star
 ---

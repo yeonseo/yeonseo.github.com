@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Plant
+title: Spring
 order: 10
 icon: fa-leaf
 ---
