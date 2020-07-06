@@ -51,7 +51,7 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 
 ## Gradle Build config
 
-1. Plugins 설정해주기
+### 1. Plugins 설정해주기
 
 자동으로 생성해 주었으니, 기본적인 설정은 되어 있을겁니다. 제 경우엔 
 
@@ -63,7 +63,7 @@ kotlin("plugin.jpa") version "1.3.61"
 가 없어서 추가 적용했습니다. 
 
 
-2. Compiler options 설정해주기
+### 2. Compiler options 설정해주기
 
 이 부분은 튜토리얼과 동일하게 설정되어 있어서 넘어갔습니다.
 
@@ -85,7 +85,7 @@ tasks.withType<KotlinCompile> {
 
 ## 실행해 보기
 
-1. settings.gradle.kts 에 rootProject.buildFileName 추가하기
+### 1. settings.gradle.kts 에 rootProject.buildFileName 추가하기
 
 ```
 // settings.gradle.kts
@@ -93,12 +93,12 @@ rootProject.name = "blog"
 rootProject.buildFileName = "build.gradle.kts"
 ```
 
-2. Load Gradle Change 눌러주고 기다리기
+### 2. Load Gradle Change 눌러주고 기다리기
 
-3. main 함수가 있는 kt 파일로 가서, run 클릭
+### 3. main 함수가 있는 kt 파일로 가서, run 클릭
 ![Spring boot & Kotlin Run](/post/images/2020-07-06-springKotlin1.png)
 
-4. [http://localhost:8080/](http://localhost:8080/) 에 접속해서 실행되는지 확인하기
+### 4. [http://localhost:8080/](http://localhost:8080/) 에 접속해서 실행되는지 확인하기
 ![Spring boot & Kotlin Run](/post/images/2020-07-06-springKotlin2.png)
 
 

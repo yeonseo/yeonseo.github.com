@@ -7,10 +7,11 @@ comments : true
 category : [Spring, Kotlin]
 ---
 
-Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과정을 담았습니다. Testing with JUnit 5 / Creating your own extensions / Persistence with JPA / Implementing the blog engine / Exposing HTTP API / Configuration properties 
+Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과정을 담았습니다. Testing with JUnit 5 / Creating your own extensions / Persistence with JPA / Implementing the blog engine / Exposing HTTP API / Configuration properties
+
 <br/><br/><br/><br/><br/>
 
-3. 
+
 ![Spring boot & Kotlin](/post/images/springKotlin.png)
 
 
