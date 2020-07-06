@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spring Boot and Kotlin
-description: "NuxtJS를 프론트앤드로 사용하기"
+title: Spring Boot and Kotlin 웹 어플리케이션 생성하기
+description: "Spring Boot and Kotlin 백앤드로 사용하기"
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Spring, Kotlin]
