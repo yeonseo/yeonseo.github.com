@@ -31,7 +31,7 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 
 # Understanding the generated Application
 
-[Spring공식 kotlin tutorials](https://spring.io/guides/tutorials/spring-boot-kotlin/)
+<a class="post-link" herf="https://spring.io/guides/tutorials/spring-boot-kotlin/">Spring공식 kotlin tutorials</a>
 
 [Spring kotlin - github](https://github.com/spring-guides/tut-spring-boot-kotlin)
 
