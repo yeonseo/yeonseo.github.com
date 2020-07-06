@@ -133,15 +133,6 @@
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
-		@keyframes color {
-			0%   { color: #ff0022; }
-			20%  { color: #eeff00; }
-			40%  { color: #0044ff; }
-			60%  { color: #ae00ff; }
-			80%  { color: #ff0095; }
-			100% { color: #57cfff; }
-		}
-
 		&:hover {
 			color: #003aa7;
 			border-bottom-color: rgba(255, 255, 255, 0);
@@ -150,12 +141,21 @@
 		.nav-link:hover {
 			color: #ebebeb;
 		}
+	}
 
-		.post-link:hover {
-			animation-name: color;
-			animation-duration: 3s;
-			animation-iteration-count: 5;
-		}
+	@keyframes color {
+		0%   { color: #ff0022; }
+		20%  { color: #eeff00; }
+		40%  { color: #0044ff; }
+		60%  { color: #ae00ff; }
+		80%  { color: #ff0095; }
+		100% { color: #57cfff; }
+	}
+
+	.post-link:hover {
+		animation-name: color;
+		animation-duration: 3s;
+		animation-iteration-count: 5;
 	}
 
 	sub {
