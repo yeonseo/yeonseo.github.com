@@ -165,12 +165,48 @@ class ArticleController(private val repository: ArticleRepository) {
 
 ## Configuration properties
 
+생성자를 기반한 속성값 연동을 가능하게 해줍니다. application.properties 파일에서 속성값을 읽어 바인딩 할 수 있습니다.
+
+```
+blog.title=Blog
+blog.banner.title=Spring Boot + Kotlin
+blog.banner.content=https://github.com/spring-guides/tut-spring-boot-kotlin
+```
 
 
+클래스에 @ConfigurationProperties 가 선언되어 있거나 생성자에서 @ConstructorBinding을 선언하여 사용합니다.
+
+BlogProperties.kt
+```
+package com.springBackendTest.blog
+
+import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.boot.context.properties.ConstructorBinding
+
+@ConstructorBinding
+@ConfigurationProperties("blog")
+data class BlogProperties(var title: String, val banner: Banner) {
+    data class Banner(val title: String? = null, val content: String)
+}
+```
+
+
+따라한 튜토리얼에서는 간단한 사용 예시만 있어서 조금 개념잡기가 어려웠는데, 아래의 포스팅을 살펴보니 validate도 적용해서 사용하네요. 나중에 참고해서 사용해야겠습니다.
+
+[A Guide to Spring Boot ConfigurationProperties for Kotlin Data Class](https://towardsdatascience.com/a-guide-to-use-spring-boots-configurationproperties-annotation-in-kotlin-s-dataclass-1341c63110f4)
+
+
+[docs.spring.io - Annotation Type ConfigurationProperties](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/context/properties/ConfigurationProperties.html)
+
+[Official Spring Boot documentation on @ConfigurationProperties](https://docs.spring.io/spring-boot/docs/2.2.1.RELEASE/reference/html/spring-boot-features.html#boot-features-kotlin-configuration-properties)
+
+<br/><br/>
+
+위에서 작성한 코드는 아래의 커밋에서 확인하실 수 있습니다.
 [Git Commit - Exposing HTTP API / Configuration properties](https://github.com/yeonseo/springKotlinBackendTest/commit/c72c799dd94fec3fb474c19fa0a8bb41674278c5)
 
 
-<br/><br/><br/>
+<br/><br/>
 
 Spring을 공부해보셨다면, 아마도 아실텐데 펫클리닉 프로젝트가 코들린 버전으로도 있더라구요. 다음 포스팅은 이 프로젝트를 이용해서 공부하는 과정을 담도록 하겠습니다. [펫클리닉 Kotlin 버전](https://github.com/spring-petclinic/spring-petclinic-kotlin)
 
