@@ -172,5 +172,5 @@ class ArticleController(private val repository: ArticleRepository) {
 
 <br/><br/><br/>
 
-[펫클리닉 Kotlin 버전](https://github.com/spring-petclinic/spring-petclinic-kotlin)
-아는 사람은 아는 펫클리닉이 코들린 버전으로도 있더라구요. 다음 포스팅은 이 프로젝트를 이용해서 공부하는 과정을 담도록 하겠습니다.
+Spring을 공부해보셨다면, 아마도 아실텐데 펫클리닉 프로젝트가 코들린 버전으로도 있더라구요. 다음 포스팅은 이 프로젝트를 이용해서 공부하는 과정을 담도록 하겠습니다. [펫클리닉 Kotlin 버전](https://github.com/spring-petclinic/spring-petclinic-kotlin)
+
