@@ -147,18 +147,14 @@
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
-		.nav-link {
-			&:hover {
-				color: #ebebeb;
-			}
+		.nav-link:hover {
+			color: #ebebeb;
 		}
 
-		.post-link {
-			&:hover {
-				animation-name: color;
-				animation-duration: 3s;
-				animation-iteration-count: 5;
-			}
+		.post-link:hover {
+			animation-name: color;
+			animation-duration: 3s;
+			animation-iteration-count: 5;
 		}
 	}
 
