@@ -11,7 +11,7 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 
 <br/><br/><br/><br/><br/>
 
-![Spring boot & Kotlin](/post/images/springKotlin.png)
+<img class="image fit" src="/post/images/springKotlin.png">
 
 
 ---
@@ -96,10 +96,11 @@ rootProject.buildFileName = "build.gradle.kts"
 ### 2. Load Gradle Change 눌러주고 기다리기
 
 ### 3. main 함수가 있는 kt 파일로 가서, run 클릭
-![Spring boot & Kotlin Run](/post/images/2020-07-06-springKotlin1.png)
+<img class="image fit" src="/post/images/2020-07-06-springKotlin1.png">
 
 ### 4. [http://localhost:8080/](http://localhost:8080/) 에 접속해서 실행되는지 확인하기
-![Spring boot & Kotlin Run](/post/images/2020-07-06-springKotlin2.png)
+<img class="image fit" src="/post/images/2020-07-06-springKotlin2.png">
+
 
 
 위에서 작성한 코드는 아래의 커밋에서 확인하실 수 있습니다.
