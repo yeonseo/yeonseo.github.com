@@ -104,4 +104,4 @@ rootProject.buildFileName = "build.gradle.kts"
 
 
 위에서 작성한 코드는 아래의 커밋에서 확인하실 수 있습니다.
-[springKotlinBackendTest - 기초 환경 설정 및 기본 컨트롤러 추가](https://github.com/yeonseo/springKotlinBackendTest/commit/f635bac6c5f0907635f61d6fbffc4a275da4024b)
+[Git Commit - 기초 환경 설정 및 기본 컨트롤러 추가](https://github.com/yeonseo/springKotlinBackendTest/commit/f635bac6c5f0907635f61d6fbffc4a275da4024b)

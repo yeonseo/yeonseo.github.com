@@ -161,6 +161,13 @@ class ArticleController(private val repository: ArticleRepository) {
 
 저는 Spring Boot+Kotlin 을 백앤드로 사용할 예정이라서, @RestController를 많이 사용할 것 같네요 :-) 함께 쓰이는 [@RequestMapping](https://joont92.github.io/spring/@RequestMapping/)도 학습해두면 좋을 것 같습니다.
 
+
+
+[Git Commit - Exposing HTTP API / Configuration properties](https://github.com/yeonseo/springKotlinBackendTest/commit/c72c799dd94fec3fb474c19fa0a8bb41674278c5)
+
+
+
+
 ## 펫클리닉 Kotlin 버전
 
 아는 사람은 아는 펫클리닉이 코들린 버전으로도 있더라구요. 다음 포스팅은 이 프로젝트를 이용해서 공부하는 과정을 담도록 하겠습니다.
