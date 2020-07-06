@@ -11,7 +11,6 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 
 <br/><br/><br/><br/><br/>
 
-3. 
 ![Spring boot & Kotlin](/post/images/springKotlin.png)
 
 
@@ -56,7 +55,7 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 
 자동으로 생성해 주었으니, 기본적인 설정은 되어 있을겁니다. 제 경우엔 
 
-```kts
+```
 // build.gradle.kts
 kotlin("plugin.jpa") version "1.3.61" 
 ```
@@ -68,7 +67,7 @@ kotlin("plugin.jpa") version "1.3.61"
 
 이 부분은 튜토리얼과 동일하게 설정되어 있어서 넘어갔습니다.
 
-```kts
+```
 // build.gradle.kts 부분 확인해보기
 
 tasks.withType<KotlinCompile> {
@@ -88,7 +87,7 @@ tasks.withType<KotlinCompile> {
 
 1. settings.gradle.kts 에 rootProject.buildFileName 추가하기
 
-```kts
+```
 // settings.gradle.kts
 rootProject.name = "blog"
 rootProject.buildFileName = "build.gradle.kts"
