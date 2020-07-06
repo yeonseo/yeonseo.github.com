@@ -139,13 +139,14 @@
 			40%  { color: #0044ff; }
 			60%  { color: #ae00ff; }
 			80%  { color: #ff0095; }
-			100% { color: #380000; }
+			100% { color: #57cfff; }
 		}
 
 		&:hover {
 			color: #ae00ff;
 			animation-name: color;
-			animation-duration: 4s;
+			animation-duration: 3s;
+			animation-iteration-count: 5;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
