@@ -133,12 +133,6 @@
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
-		&:hover {
-			color: #ae00ff;
-			animation-name: color;
-			border-bottom-color: rgba(255, 255, 255, 0);
-		}
-		
 		@keyframes color {
 			0%   { color: #ff0022; }
 			20%  { color: #eeff00; }
@@ -146,6 +140,13 @@
 			60%  { color: #ae00ff; }
 			80%  { color: #ff0095; }
 			100% { color: #380000; }
+		}
+
+		&:hover {
+			color: #ae00ff;
+			animation-name: color;
+			animation-duration: 4s;
+			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
 
