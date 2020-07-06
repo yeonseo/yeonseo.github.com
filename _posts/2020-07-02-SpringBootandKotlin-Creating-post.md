@@ -57,25 +57,12 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 자동으로 생성해 주었으니, 기본적인 설정은 되어 있을겁니다. 제 경우엔 
 
 ```kts
+// build.gradle.kts
 kotlin("plugin.jpa") version "1.3.61" 
 ```
 
 가 없어서 추가 적용했습니다. 
 
-
-```kts
-// build.gradle.kts에 적용된 모습
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
-plugins {
-  kotlin("plugin.jpa") version "1.3.61"
-  id("org.springframework.boot") version "2.2.2.RELEASE"
-  id("io.spring.dependency-management") version "1.0.8.RELEASE"
-  kotlin("jvm") version "1.3.61"
-  kotlin("plugin.spring") version "1.3.61"
-}
-
-```
 
 2. Compiler options 설정해주기
 
