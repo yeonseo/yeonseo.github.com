@@ -178,9 +178,29 @@ enum class CardType {
 
 ## 스마트 캐스트
 
-프로그래머가는 코드에서 타입체크와 널을 체크하도록 설계를 해야합니다. 이 과정이 자바에서는 번거로울 수 있는 행동이라 생략하곤 합니다. 코틀린에서는 간단하게 구현할 수 있습니다. 이 효과로 널 예외, 캐스트 예외가 발생해서 프로그램이 중단되는 것을 방지해 줄 수 있습니다.
+c#에서의 is, JAVA에서는 instanceof와 비슷!
 
 ```kotlin
 if (value is String) // is 로 타입검사
     println(value.toUpperCase()) //
 ```
+
+
+자바와 비교하면 정말정말정말 심플하네요..! 🎶 (약간 충격적,,) [자바 - instanceof](https://www.javatpoint.com/downcasting-with-instanceof-operator)
+```java
+class Animal { } 
+class Dog3 extends Animal {  
+  static void method(Animal a) {  
+    if(a instanceof Dog3){  
+       Dog3 d=(Dog3)a;//downcasting  
+       System.out.println("ok downcasting performed");  
+    }  
+  }  
+  public static void main (String [] args) {  
+    Animal a=new Dog3();  
+    Dog3.method(a);  
+  }
+}
+```
+
+
