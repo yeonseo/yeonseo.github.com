@@ -80,8 +80,97 @@ return next.handle(req).pipe(
 
 데이터 흐름은 Observable이라는 클래스가 가진 형태로 전송이 되어야 하는데, 보내려고 하는 {'message' : '!@#$'} 객체 형태는 적합하지 않다고 합니다.
 
-# 해결 중,,
+# 해결!
 
+```ts
+export class HttpInterceptorService implements HttpInterceptor {
+
+  private globalToken = 'EmptyToken';
+  public error_data = {};
+  public errorCostom = '';
+
+  constructor(private injector: Injector,
+              private requestService: RequestService,
+              private authService: AuthenticationService) {
+  }
+
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    // const token: string = localStorage.getItem('token');
+    const currentUser: string = JSON.parse(localStorage.getItem('currentUser'));
+    if (currentUser) {
+      req = req.clone({headers: req.headers.set('Authorization', 'Bearer ' + currentUser['token'])});
+    }
+    if (!req.headers.has('Content-Type')) {
+      req = req.clone({headers: req.headers.set('Content-Type', 'application/json')});
+    }
+    req = req.clone({headers: req.headers.set('Accept', 'application/json')});
+
+    return next.handle(req).pipe(
+      retry(3),
+      map((event: HttpEvent<any>) => {
+        if (event instanceof HttpResponse) {
+          console.log('Interceptor Event--->>>', event);
+        }
+        return event;
+      }),
+      catchError(this.handleError)
+    );
+  }
+
+
+  handleError(error) {
+    this.error_data = {
+      error: error,
+      reason: error && error.error && error.error.reason ? error.error.reason : '',
+      status: error.status
+    };
+    // error_m = error && error.error && error.error.reason ? error.error.reason : '';
+    // status_m = error.status;
+    // messeage = error.error.error.message;
+    console.log('Interceptor error--->>>', this.error_data);
+
+    if (this.error_data['status'] === 400) {
+      this.errorCostom =
+        `잘못된 요청입니다. 입력칸을 다시 확인해주세요.
+        계속 오류가 발생될 경우, 관리자에게 문의바랍니다.
+      \n code : ${this.error_data['status']}`;
+      // return this.errorCostom; -> Observable ㅠㅠ
+    }
+    if (this.error_data['status'] === 403) {
+      this.errorCostom =
+        `접근 권한이 없습니다. 권한 변경을 원하시면 관리자에게 문의바랍니다.
+      \n code : ${this.error_data['status']}`;
+    }
+
+    if (this.errorCostom['message'] !== '') {
+    }
+    return throwError(error);
+  }
+
+  handleErrorRef(error) {
+    let errorMessage = '';
+
+    this.error_data = {
+      error: error,
+      reason: error && error.error && error.error.reason ? error.error.reason : '',
+      status: error.status
+    };
+
+    if (error.error instanceof ErrorEvent) {
+      // client-side error
+      errorMessage = `Error: ${error.error.message}`;
+    } else {
+      // server-side error
+      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+    }
+    window.alert(errorMessage);
+    return throwError(errorMessage);
+  }
+
+}
+```
+
+위처럼 전달하려는 에러 정보가 어떤 메세지로 나타났으면 좋겠는지 작성을 하고, 그 내용을 message라는 항목에 넣어서 에러자체를 전달해주어야 합니다. 👌
 
 ## 참조
 > RxJava - Observable이란?

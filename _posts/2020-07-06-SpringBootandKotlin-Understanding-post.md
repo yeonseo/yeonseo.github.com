@@ -208,5 +208,15 @@ data class BlogProperties(var title: String, val banner: Banner) {
 
 <br/><br/>
 
-Spring을 공부해보셨다면, 아마도 아실텐데 펫클리닉 프로젝트가 코들린 버전으로도 있더라구요. 다음 포스팅은 이 프로젝트를 이용해서 공부하는 과정을 담도록 하겠습니다. [펫클리닉 Kotlin 버전](https://github.com/spring-petclinic/spring-petclinic-kotlin)
+Spring을 공부해보셨다면, 아마도 아실텐데 펫클리닉 프로젝트가 코들린 버전으로도 있더라구요. [펫클리닉 Kotlin 버전](https://github.com/spring-petclinic/spring-petclinic-kotlin)
 
+# Pet Clinic 이란?
+
+> A legendary and official webapp
+> The Spring PetClinic is a sample application designed to show how the Spring stack can be used to build simple, but powerful database-oriented applications.
+[The Spring PetClinic Community](https://spring-petclinic.github.io/)
+
+아주 유명한 공식적인 웹 앱!
+Spring PetClinic은 스프링을 이용해서 만들어진 웹 어플리케이션으로, 간단한 디자인을 보여줍니다. 자주 쓰이는 어노테이션도 적용되어 있고, 테스트 모델도 만들어져 있어서 처음에 공부하기 좋습니다. 이걸로 강의를 찍으시는 분들도 있을 정도,,!
+
+코틀린은 안드로이드 앱과 관련한 코드나 튜토리얼이 많은 편입니다. 스프링을 검색하면 스프링 + 자바 조합으로 굉장히 커뮤니케이션이 잘 발달되어 있지만, 스프링 + 코틀린 튜토리얼이 굉장히 빈약한 편,, ㅠㅠ 그 와중에 펫 클리닉을 코틀린으로도 제공받을 수 있다는 건 얼마나 감사한지! ㅎㅎㅎ 더 확장된 웹 기능을 담고있는 코드가 궁금하신 분들은 한번 참고 해보시길 바랍니다.

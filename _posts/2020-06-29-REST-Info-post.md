@@ -2,7 +2,7 @@
 layout: post
 title: REST API란?
 description: "Rest API는 무엇인가??"
-tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
+tags: [REST, Web, TIL, Today I Leaned]
 comments : true
 category : [etc]
 ---
