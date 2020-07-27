@@ -1,7 +1,7 @@
 ---
 layout: post
-title: [Book] Kotlin In Action - Dmitry Jemerov, Svetlana Isakova
-description: "Spring Boot and Kotlin 참고자료 북마크"
+title: [Book]  Kotlin In Action 정리 01편 - 코틀린이란? (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
+description: "Kotlin In Action - Dmitry Jemerov, Svetlana Isakova를 읽고 정리하기"
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Kotlin]
@@ -204,3 +204,34 @@ class Dog3 extends Animal {
 ```
 
 
+## 수의 범위
+
+자바에서 for문을 사용하기 위해서는 아래와 같이 수의 범위를 지정해야 합니다.
+```java
+for(i = 0 ; i >= 10 ; i = i + 2) {
+  ...
+}
+```
+
+Kotlin에서는 좀 더 직관적입니다.
+```kotlin
+for (i in 1..100) {
+  ...
+} // -> 반복 : 1, 2, 3, ... , 100
+
+for (i in 100 downTo 0 step 2) {
+  ...
+} // -> 반복 : 100, 98, 96, ... , 0
+```
+
+범위에는 문자 타입의 값도 사용할 수 있습니다. 'A'..'F'로 사용할 수 있죠. 
+
+그리고 in을 통해서 범위 안에 찾고자 하는 요소의 존재 여부에 따른 Boolean값을 받을 수도 있습니다. (OMG..!!!)
+
+```kotlin
+var c = 'b'
+println(c in 'a'..'z' || c in 'A'..'Z') // true
+println(c !in '0'..'9') // false
+```
+
+이상 코틀린 기초에 대해서 알아보았습니다. 다음 포스팅에서는 함수에 대해서 정리해 보도록 하겠습니다.
