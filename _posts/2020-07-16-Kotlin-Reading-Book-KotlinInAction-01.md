@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Book]  Kotlin In Action 정리 01편 - 코틀린이란? (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
+title: Kotlin In Action 정리 01편 - 코틀린이란? (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
 description: "Kotlin In Action - Dmitry Jemerov, Svetlana Isakova를 읽고 정리하기"
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
