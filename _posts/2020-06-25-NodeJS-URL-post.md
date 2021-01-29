@@ -1,10 +1,10 @@
 ---
-layout: post
 title: NodeJS URL 요청처리
-description: "NodeJS를 백앤드로 사용하기"
+author: Yeonseo Nam
+date: 2020-06-25 19:34:00 +0900
+categories: [NodeJS, Tutorial]
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [NodeJS]
 ---
 
 URL Routing 처리

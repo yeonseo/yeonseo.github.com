@@ -1,10 +1,10 @@
 ---
-layout: post
 title: 싱글톤(SingleTon)
-description: "오늘부터 배운 내용 기록하기"
+author: Yeonseo Nam
+date: 2019-08-26 19:01:00 +0900
+categories: [Java, Tutorial]
 tags: [SingleTon, class, TIL, Today I Leaned]
 comments : true
-category : [Java]
 ---
 * Development Env.
 * post date : 2019. 08. 26

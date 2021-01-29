@@ -1,10 +1,10 @@
 ---
-layout: post
 title: md 파일 작성법
-description: "오늘부터 배운 내용 기록하기"
+author: Yeonseo Nam
+date: 2019-08-20 19:34:00 +0900
+categories: [etc, Tutorial]
 tags: [Markdown, md, TIL, Today I Leaned]
 comments : true
-category : [etc]
 ---
 * Development Env.
 * post date : 2019. 09. 21
@@ -127,40 +127,40 @@ function fancyAlert(arg) {
 
 ## 표
 ```java
-irst Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| irst Header                 | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
 or
 
-| irst Header | Second Header|
-|------------ | -------------|
-|Content from cell 1 | Content from cell 2|
-|Content in the first column | Content in the second column|
+| irst Header                 | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
-| One | Two | Three |
-|:--- | :---:| ---:|
-|cell1|cell2|cell3|
-|cell111111|cell222222|cell3333333|
+| One        |    Two     |       Three |
+| :--------- | :--------: | ----------: |
+| cell1      |   cell2    |       cell3 |
+| cell111111 | cell222222 | cell3333333 |
 
 ```
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
 
-| irst Header | Second Header|
-|------------ | -------------|
-|Content from cell 1 | Content from cell 2|
-|Content in the first column | Content in the second column|
+| irst Header                 | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
-| One | Two | Three |
-|:--- | :---:| ---:|
-|cell1|cell2|cell3|
-|cell111111|cell222222|cell3333333|
+| One        |    Two     |       Three |
+| :--------- | :--------: | ----------: |
+| cell1      |   cell2    |       cell3 |
+| cell111111 | cell222222 | cell3333333 |
 
 ## 리스트
 

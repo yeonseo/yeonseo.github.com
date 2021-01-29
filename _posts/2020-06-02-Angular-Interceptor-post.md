@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Angular Interceptor로 로그인 상태 확인하기
-description: "Angular Interceptor로 로그인 상태 확인하기"
+author: Yeonseo Nam
+date: 2020-06-02 19:34:00 +0900
+categories: [Angular, Tutorial]
 tags: [Angular, TypeScript, Frontend, Web, TIL, Today I Leaned]
 comments : true
 category : [Angular]

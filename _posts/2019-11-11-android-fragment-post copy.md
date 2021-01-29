@@ -1,10 +1,10 @@
 ---
-layout: post
 title: Android Fragment&(Web View, Canvas, Imgae Edit)
-description: "Fragment View사용해서 한꺼번에 여러 페이지의 이벤트 구현하기"
+author: Yeonseo Nam
+date: 2019-11-11 19:34:00 +0900
+categories: [Android, Tutorial]
 tags: [Android, Layout, Fragment,Web, View,Canvas,Imgae ,Java, TIL, Today I Leaned]
 comments : true
-category : [Android]
 ---
 * Development Env.
 * post date : 2019. 11. 11

@@ -1,10 +1,10 @@
 ---
-layout: post
 title: Spring Boot and Kotlin 웹 튜토리얼 1
-description: "Spring Boot and Kotlin 백앤드로 사용하기"
+author: Yeonseo Nam
+date: 2020-07-02 21:34:00 +0900
+categories: [Spring, Kotlin, Tutorial]
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Spring, Kotlin]
 ---
 
 Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과정을 담았습니다. 코틀린은 IntelliJ IDEA의 개발사 JetBrains에서 만든 프로그래밍 언어로 자바보다 간결한 문법을 자랑합니다. 안드로이드에서 공식적으로 코틀린을 추가한만큼 배워두면 좋을 것 같습니다. 몇몇 블로그와 안드로이드 공식문서에서 보면, 자바보다 훨씬 간결해진 코드로 작성할 수 있는 것을 볼 수 있는데, 관심있으신 분들은 한 번 찾아보시길 바랍니다. :-)

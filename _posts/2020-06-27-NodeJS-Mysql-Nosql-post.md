@@ -1,10 +1,10 @@
 ---
-layout: post
-title: NodeJS Mysql, Nosql 연동
-description: "NodeJS를 백앤드로 사용하기"
+title: NodeJS Mysql, NoSql 연동
+author: Yeonseo Nam
+date: 2020-06-27 19:34:00 +0900
+categories: [NodeJS, Tutorial]
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [NodeJS]
 ---
 
 DB는 RDS와 Nosql을 사용하기로 했습니다. RDB는 Mysql을 사용하고, Nosql은 MongoDB를 사용해 연동을 합니다. 

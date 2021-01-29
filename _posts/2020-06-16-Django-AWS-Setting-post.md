@@ -1,10 +1,10 @@
 ---
-layout: post
-title: AWS 환경설정 1
-description: "Django & angular를 배포해보자!"
+title: AWS 환경설정 (django 배포해보기)
+author: Yeonseo Nam
+date: 2020-06-16 19:34:00 +0900
+categories: [Django, Angular, Tutorial]
 tags: [Python, Django, Web, Backend, AWS, TIL, Today I Leaned]
 comments : true
-category : [Django, Django&Angualr]
 ---
 
 
@@ -442,4 +442,4 @@ commands:
 ALLOWED_HOSTS = [".elasticbeanstalk.com"]
 ```
 
-이렇게 elasticbeanstalk에서 접근하면, 웹페이지를 보여주도록 혀용을 바꿔줍니다. :-)
+이렇게 elasticbeanstalk에서 접근하면, 웹페이지를 보여주도록 허용을 바꿔줍니다. :-)

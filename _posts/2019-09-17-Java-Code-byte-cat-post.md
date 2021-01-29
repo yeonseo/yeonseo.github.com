@@ -1,10 +1,10 @@
 ---
-layout: post
 title: 바이트 단위로 두개의 파일을 비교하기
-description: "오늘부터 배운 내용 기록하기"
+author: Yeonseo Nam
+date: 2019-09-17 16:34:00 +0900
+categories: [Java, Tutorial]
 tags: [FileInputStream, FileOutputStream, Algorism, code, TIL, Today I Leaned]
 comments : true
-category : [Java]
 ---
 
 * Development Env.

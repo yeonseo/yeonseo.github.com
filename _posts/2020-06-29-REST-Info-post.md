@@ -1,10 +1,10 @@
 ---
-layout: post
 title: REST API란?
-description: "Rest API는 무엇인가??"
+author: Yeonseo Nam
+date: 2020-06-29 19:34:00 +0900
+categories: [Web, Tutorial]
 tags: [REST, Web, TIL, Today I Leaned]
 comments : true
-category : [etc]
 ---
 
 

@@ -1,10 +1,10 @@
 ---
-layout: post
-title: Java Serializable
-description: "유저의 정보를 파일로 저장하고 불러와서 출력하기 (feat.Serializable 상속받은 객체)"
+title: Java Serializable 정보를 파일로 저장하고 불러와서 출력하기 (feat.Serializable 상속받은 객체)
+author: Yeonseo Nam
+date: 2019-09-17 19:34:00 +0900
+categories: [Java, Tutorial]
 tags: [FileInputStream, FileOutputStream, ObjectInputStream,ObjectOuputStream, Serializable, Map, Algorism, code, Java, TIL, Today I Leaned]
 comments : true
-category : [Java]
 ---
 
 * Development Env.

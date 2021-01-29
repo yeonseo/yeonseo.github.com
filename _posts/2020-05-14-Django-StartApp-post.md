@@ -1,7 +1,8 @@
 ---
-layout: post
 title: Python & Django App 생성 및 설계하기
-description: "Python & Django App 생성 및 설계하기"
+author: Yeonseo Nam
+date: 2020-05-14 19:34:00 +0900
+categories: [Django, Tutorial]
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Django]

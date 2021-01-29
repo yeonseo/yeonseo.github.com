@@ -1,10 +1,10 @@
 ---
-layout: post
 title: NuxtJS 설치 밎 환경 구성
-description: "NuxtJS를 잘 사용해보자"
+author: Yeonseo Nam
+date: 2020-07-01 19:34:00 +0900
+categories: [NuxtJS, Tutorial]
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
-category : [NuxtJS]
 ---
 
 <br/><br/><br/><br/><br/>

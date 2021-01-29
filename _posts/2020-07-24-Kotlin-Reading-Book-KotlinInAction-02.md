@@ -1,10 +1,10 @@
 ---
-layout: post
 title: Kotlin In Action 정리 02편 - 코틀린의 함수 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
-description: "Kotlin In Action - Dmitry Jemerov, Svetlana Isakova를 읽고 정리하기"
+author: Yeonseo Nam
+date: 2020-07-24 19:34:00 +0900
+categories: [Kotlin, Tutorial]
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Kotlin]
 ---
 
 본 포스팅은 Kotlin In Action - Dmitry Jemerov, Svetlana Isakova 책을 읽고, 기록하기 위한 용도로 작성되었습니다. 이 책의 대상 독자는 어느 정도 자바를 알고 있는 개발자를 대상으로 합니다. 서버 개발자나 안드로이드 개발자, JVM에서 실행되는 프로젝트를 구축중인 개발자들이라면 이 책이 도움이 될 것입니다.
@@ -218,4 +218,4 @@ var path = """C:\Users\dir\folder\test.txt"""
 ```
 
 
-불필요한 코드를 줄이기 위해서 노력했다고 하던데 확실히 코드량도 그렇지만 구현하는 방법 자체가 깔끔하다는 생각이 듭니다. 조금 낯설어서 적응을 해야겠지만요. 다음 포스팅에서는 클래스와 객체, 인터페이스에 대해서 정리해보겠습니다.
+불필요한 코드를 줄이기 위해서 노력했다고 하던데 확실히 코드량도 그렇지만 구현하는 방법 자체가 깔끔하다는 생각이 듭니다. 조금 낯설어서 적응을 해야겠지만요.

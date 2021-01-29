@@ -1,10 +1,10 @@
 ---
-layout: post
 title: Java 첫 자바프로젝트 끝!
-description: "자바프로젝트-캐치마인드"
+author: Yeonseo Nam
+date: 2019-10-29 19:34:00 +0900
+categories: [Java, etc]
 tags: [JavaFX, Java, Project, TIL, Today I Leaned]
 comments : true
-category : [Java]
 ---
 
 * Development Env.
@@ -22,9 +22,9 @@ category : [Java]
 
 1. 운영체제 : MacOS Catalina 10.15 / Windows 10 64 Bit
 3. 개발 언어 : JDK1.8 / JavaFX
-4. 개발 도구 : Eclipse IDE for Java Developers Version: Neon.3 Release (4.9.0) JavaFX Scene Builder2.0 JDK 1.8.0_221 ERWIN 7.3.0.1666
+4. 개발 도구 : Eclipse IDE for Java Developers Version: Neon.3 Release (4.9.0)JavaFX Scene Builder2.0JDK 1.8.0_221ERWIN 7.3.0.1666
 5. 디자인툴 : Scene Builder2.0
-6. DB : MySQL Community Server 5.7.10-log (GPL) MySQL Workbench 6.3.5 CE build 201(64Bit)
+6. DB : MySQL Community Server 5.7.10-log (GPL)MySQL Workbench 6.3.5 CE build 201(64Bit)
 
 
 두명이서 2주의 개발기간을 가지고 해서 조금은 아쉽기도 하고.. 플젝을 마친 후엔 한동안은 코드가 보기 싫을 정도였는데 꿈은 코드짜는 꿈을 꾸었을 정도로 너무 애증스러운 작품이 되었다. 이번 프로젝트를 진행하면서 느낀 것이 참 많았지만 몇가지만 기억해 두려고 기록을 한다.
@@ -35,6 +35,4 @@ category : [Java]
 * 깔끔한 코드를 많이 참고하고 변수명이나 클래스명을 잘 짓는 것을 배우자
 
 2주라는 시간은 너무 부족했다. 내가 넣고 싶은 기능은 많았고, 다량의 코드를 처음 다뤄봐서 효율적으로 변수나 함수를 정리하는 방법도 생각해야했다. 고민은 많이 했지만 결국 지나고 보니... 정신없이 보내기만 한 것 같다. 밤을 꼴딱새고 다시 수업들으러 출석을 하고 오후엔 다시 프로젝트를 했다. 여러가지로 너무 아쉬운 마음이 많이 남아서 사실 조금 부족한 부분이 있는데, 이 프로젝트 코드를 되돌아보기가 망설여진다. 약간 아픈 손가락같은 기분이다. 다시 볼 마음이 생기면 좀더 정리를 하고 싶다.
-
-
 

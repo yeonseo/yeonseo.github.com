@@ -243,3 +243,22 @@ Now, you should see the Page View enabled on your blog.
 [^ga-filters]: [Google Analytics Core Reporting API: Filters](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#filters)
 
 [chirpy-homepage]: https://github.com/cotes2020/jekyll-theme-chirpy/
+
+
+
+
+이유미 작가님이 전하는 에세이를 쓰기 위한 팁!
+
+수시로 글감 찾기 : 사소할수록 공감한다.
+꾸준히 쓴다 : 문장력이 좋아 꾸준히 쓰는 것이 아니라 꾸준히 쓰면 문장이 좋아진다.
+메모 : 뚜렷한 기억보다 희미한 연필 자국이 낫다.
+디테일 : '삶은 디테일이 없으면 아무것도 아니다’ 그 디테일에서 공감이 나오고 감동이 나온다.
+의미를 의도한다 : 누군가에게 에세이를 소개할 때, 어떤 이야기라고 말할 수 있게
+내가 읽고 싶은 글을 쓴다 : 내가 쓰고 싶은 주제여야, 독자도 읽고 싶어 진다.
+대수롭지 않게 시작 : 제대로 알고 써야지가 아닌, 쓰면서 알아 나간다.
+다양한 일에 감응할 것 : 영화 책, 드라마, SNS 이슈에 촉각을 세운다.
+되도록 한 번에 쓴다 : 내가 한 번에 써야 독자도 한 번에 읽는다.
+툭, 끝나도 된다 : 결론에 대한 강박을 버릴 것
+두 개의 다른 이야기를 접목해본다 : 자연스러운 연결이 어렵다면 글의 번호 붙이기도 좋다.
+많이 읽는다, 필사도 좋은 방법 : 필사를 하다 보면, 글의 풀이가 수학공식처럼 보여요.
+빨리 쓴다, 가볍게 쓴다 : 다음에 더 잘 써야지, 이번 글이 끝이 아니니까!

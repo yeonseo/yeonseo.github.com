@@ -1,10 +1,10 @@
 ---
-layout: post
 title: Spring Boot and Kotlin 참고자료 북마크
-description: "Spring Boot and Kotlin 참고자료 북마크"
+author: Yeonseo Nam
+date: 2020-07-14 19:34:00 +0900
+categories: [Spring, Kotlin, etc]
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Spring, Kotlin]
 ---
 
 

@@ -1,10 +1,10 @@
 ---
-layout: post
 title: JavaFX의 개요
-description: "오늘부터 배운 내용 기록하기"
+author: Yeonseo Nam
+date: 2019-09-23 19:34:00 +0900
+categories: [Java, Tutorial]
 tags: [JavaFX, Java, TIL, Today I Leaned]
 comments : true
-category : [Java]
 ---
 
 * Development Env.
@@ -49,9 +49,9 @@ category : [Java]
 
 ## JavaFX 구성요소 및 생명주기
 
-|레이아웃|외관 및 스타일|리소스|
-|:---:|:---:|:---:|
-|자바 코드 파일 또는 FXML|||
+|         레이아웃         | 외관 및 스타일 | 리소스 |
+| :----------------------: | :------------: | :----: |
+| 자바 코드 파일 또는 FXML |                |        |
 
 
 
