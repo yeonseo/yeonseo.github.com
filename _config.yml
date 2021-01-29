@@ -202,7 +202,7 @@ jekyll-archives:
     category: /categories/:name/
 
 # theme: jekyll-theme-chirpy
-
+# remote_theme: https://github.com/cotes2020/jekyll-theme-chirpy.git
 plugins:
   - jekyll-remote-theme
 remote_theme: cotes2020/jekyll-theme-chirpy
