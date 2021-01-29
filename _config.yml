@@ -18,7 +18,7 @@ github:
   username: yeonseo             # change to your github username
 
 twitter:
-  username: none            # change to your twitter username
+  username:            # change to your twitter username
 
 social:
   name: 남연서                  # it will shows as the copyright owner in Footer
@@ -55,7 +55,7 @@ google_analytics:
 
 disqus:
   comments: true # boolean type, the global switch for posts comments.
-  shortname: yeonseo    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  shortname: yeonseonam    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 
 # Prefer color scheme setting.
@@ -202,3 +202,4 @@ jekyll-archives:
     category: /categories/:name/
 
 # theme: jekyll-theme-chirpy
+remote_theme: cotes2020/jekyll-theme-chirpy
