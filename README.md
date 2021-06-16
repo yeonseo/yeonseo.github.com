@@ -1,3 +1,11 @@
+# 기록하는 공간
+
+- c
+- java
+- ...
+- Kotlin (현재 사용 중)
+- Nust (현재 사용 중)
+
 # Chirpy
 
 Language: English | [简体中文](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/README.zh-CN.md)
