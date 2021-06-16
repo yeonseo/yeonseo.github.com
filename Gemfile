@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.1"
+gem "jekyll-theme-chirpy", "~> 4.0", ">= 4.0.1"
 
 # plugins
 group :jekyll_plugins do
@@ -26,5 +26,5 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # gem "jekyll-theme-chirpy"
-gem "jekyll-remote-theme"
-gem "webrick", "~> 1.7"
+# gem "jekyll-remote-theme"
+# gem "webrick", "~> 1.7"
