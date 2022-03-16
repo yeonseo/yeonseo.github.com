@@ -8,8 +8,8 @@ category : [Vue]
 ---
 
 # 에러 기록
-
-<img class="image fit" src="/post/images/2022-02-28-infinite-redirection.png">
+<!-- 
+<img class="image fit" src="/post/images/2022-02-28-infinite-redirection.png"> -->
 
 
 vue-router.esm-bundler.js:72 [Vue Router warn]: Detected an infinite redirection in a navigation guard when going from "/" to "/login". Aborting to avoid a Stack Overflow. This will break in production if not fixed.
@@ -46,8 +46,8 @@ router.beforeEach((to, from, next) => {
 export default router;
 
 ```
-
-<img class="image fit" src="/post/images/2022-02-28-infinite-redirection2.png">
+<!-- 
+<img class="image fit" src="/post/images/2022-02-28-infinite-redirection2.png"> -->
 
 
 
