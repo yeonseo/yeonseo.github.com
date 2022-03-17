@@ -2,7 +2,7 @@
 title: Spring Boot and Kotlin 웹 튜토리얼 1
 author: Yeonseo Nam
 date: 2020-07-02 21:34:00 +0900
-categories: [Spring, Kotlin, Tutorial]
+categories: [Tutorial, Spring & Kotlin]
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 ---

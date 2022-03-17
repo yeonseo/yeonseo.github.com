@@ -2,7 +2,7 @@
 title: JavaFX의 개요
 author: Yeonseo Nam
 date: 2019-09-23 19:34:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [JavaFX, Java, TIL, Today I Leaned]
 comments : true
 ---

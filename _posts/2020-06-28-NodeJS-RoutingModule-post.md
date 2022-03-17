@@ -2,7 +2,7 @@
 title: NodeJS Routing 모듈화 및 리팩토링
 author: Yeonseo Nam
 date: 2020-06-28 19:34:00 +0900
-categories: [NodeJS, Tutorial]
+categories: [NodeJS]
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
 ---

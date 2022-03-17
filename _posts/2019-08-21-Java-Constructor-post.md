@@ -2,7 +2,7 @@
 title: 생성자 함수의 오버로드
 author: Yeonseo Nam
 date: 2019-08-21 19:13:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [constructor, overload, TIL, Today I Leaned]
 comments : true
 ---

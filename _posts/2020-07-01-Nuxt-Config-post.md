@@ -2,7 +2,7 @@
 title: NuxtJS 설치 밎 환경 구성
 author: Yeonseo Nam
 date: 2020-07-01 19:34:00 +0900
-categories: [NuxtJS, Tutorial]
+categories: [Frontend, NuxtJS]
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
 ---

@@ -2,7 +2,7 @@
 title: AWS 환경설정 (django 배포해보기)
 author: Yeonseo Nam
 date: 2020-06-16 19:34:00 +0900
-categories: [Django, Angular, Tutorial]
+categories: [Tutorial, Django & Angular]
 tags: [Python, Django, Web, Backend, AWS, TIL, Today I Leaned]
 comments : true
 ---

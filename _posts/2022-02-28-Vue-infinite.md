@@ -4,7 +4,7 @@ title: Vue - infinite redirection 문제
 description: ""
 tags: [vue, Web, ERROR, Frontend, TIL, Today I Leaned]
 comments : true
-category : [Vue]
+category : [Frontend, Vue]
 ---
 
 # 에러 기록

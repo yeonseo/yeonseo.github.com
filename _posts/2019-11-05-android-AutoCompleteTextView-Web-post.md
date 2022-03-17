@@ -2,7 +2,7 @@
 title: Android Web & AutoCompleteTextView
 author: Yeonseo Nam
 date: 2019-11-05 14:34:00 +0900
-categories: [Android, Tutorial]
+categories: [Android]
 tags: [Android, Widget, Web, AutoCompleteTextView, Java, TIL, Today I Leaned]
 comments : true
 ---

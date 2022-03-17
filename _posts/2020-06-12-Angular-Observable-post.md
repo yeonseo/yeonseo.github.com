@@ -2,7 +2,7 @@
 title: Angular Http 400 에러 처리하기 (Observabel 데이터 처리)
 author: Yeonseo Nam
 date: 2020-06-12 19:34:00 +0900
-categories: [Angular, Tutorial]
+categories: [Tutorial, Django & Angular]
 tags: [Angular, TypeScript, Observabel, Frontend, Web, TIL, Today I Leaned]
 comments : true
 ---

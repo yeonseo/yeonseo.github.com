@@ -2,7 +2,7 @@
 title: comparable 상속받아 비교하기
 author: Yeonseo Nam
 date: 2019-09-10 19:34:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [comparable, compareTo, Algorism, code, TIL, Today I Leaned]
 comments : true
 ---

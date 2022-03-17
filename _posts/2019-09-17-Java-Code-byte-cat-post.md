@@ -2,7 +2,7 @@
 title: 바이트 단위로 두개의 파일을 비교하기
 author: Yeonseo Nam
 date: 2019-09-17 16:34:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [FileInputStream, FileOutputStream, Algorism, code, TIL, Today I Leaned]
 comments : true
 ---

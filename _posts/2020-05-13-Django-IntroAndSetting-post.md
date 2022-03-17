@@ -2,7 +2,7 @@
 title: Python & Django 설치 및 프로젝트 생성하기
 author: Yeonseo Nam
 date: 2020-05-13 19:34:00 +0900
-categories: [Django, Tutorial]
+categories: [Tutorial, Django & Angular]
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
 ---

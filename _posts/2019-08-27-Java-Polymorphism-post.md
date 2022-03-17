@@ -2,7 +2,7 @@
 title: 추상클래스와 인터페이스의 다형성
 author: Yeonseo Nam
 date: 2019-08-27 19:34:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [Abstract, Interface, Polymorphism, class, TIL, Today I Leaned]
 comments : true
 ---

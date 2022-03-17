@@ -2,7 +2,7 @@
 title: REST API란?
 author: Yeonseo Nam
 date: 2020-06-29 19:34:00 +0900
-categories: [Web, Tutorial]
+categories: [Web]
 tags: [REST, Web, TIL, Today I Leaned]
 comments : true
 ---

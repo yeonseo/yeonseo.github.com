@@ -2,7 +2,7 @@
 title: NodeJS 시작하기
 author: Yeonseo Nam
 date: 2020-06-24 19:34:00 +0900
-categories: [NodeJS, Tutorial]
+categories: [NodeJS]
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
 ---

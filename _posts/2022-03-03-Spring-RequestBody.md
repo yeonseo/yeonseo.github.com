@@ -4,7 +4,7 @@ title: 스프링부트 (Spring) Get 사용 시 Body관련
 description: ""
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Spring Data JPA]
+category : [Spring, Spring Data JPA]
 ---
 
 # Get 에서는 Body가 담기지 않음

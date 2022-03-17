@@ -2,7 +2,7 @@
 title: Android Fragment&(Web View, Canvas, Imgae Edit)
 author: Yeonseo Nam
 date: 2019-11-11 19:34:00 +0900
-categories: [Android, Tutorial]
+categories: [Android]
 tags: [Android, Layout, Fragment,Web, View,Canvas,Imgae ,Java, TIL, Today I Leaned]
 comments : true
 ---

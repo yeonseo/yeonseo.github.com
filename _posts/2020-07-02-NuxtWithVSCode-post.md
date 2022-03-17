@@ -2,7 +2,7 @@
 title: Visual Studio Code로 NuxtJS 디버깅하기
 author: Yeonseo Nam
 date: 2020-05-13 19:34:00 +0900
-categories: [NuxtJS, etc]
+categories: [Frontend, NuxtJS]
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
 ---

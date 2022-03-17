@@ -2,7 +2,7 @@
 title: 싱글톤(SingleTon)
 author: Yeonseo Nam
 date: 2019-08-26 19:01:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [SingleTon, class, TIL, Today I Leaned]
 comments : true
 ---

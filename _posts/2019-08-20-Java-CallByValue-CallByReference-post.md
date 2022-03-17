@@ -2,7 +2,7 @@
 title: call by value와 call by reference의 차이점을 주소값 출력으로 알아보기
 author: Yeonseo Nam
 date: 2019-08-20 19:34:00 +0900
-categories: [Java, Tutorial]
+categories: [Java]
 tags: [call by value, call by reference, TIL, Today I Leaned]
 comments : true
 ---

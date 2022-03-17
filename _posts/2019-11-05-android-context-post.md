@@ -2,7 +2,7 @@
 title: Android 위젯(Context)
 author: Yeonseo Nam
 date: 2019-11-05 19:34:00 +0900
-categories: [Android, Tutorial]
+categories: [Android]
 tags: [Android, Widget, Context, Java, TIL, Today I Leaned]
 comments : true
 ---

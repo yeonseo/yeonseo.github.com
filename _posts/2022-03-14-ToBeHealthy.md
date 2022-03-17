@@ -4,7 +4,7 @@ title: 건강해지자 - 한 직장인이 2년만에 편두통으로 구토까�
 description: ""
 tags: [Health, TIL, Today I Leaned]
 comments : true
-category : [Tool]
+category : [일기]
 ---
 
 최근 편두통이 심해지는 주기가 잦아지기 시작했고, 몸도 안 좋아짐을 느껴서 신경과를 찾았음

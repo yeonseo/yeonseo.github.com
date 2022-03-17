@@ -2,7 +2,7 @@
 title: 코틀린의 함수 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
 author: Yeonseo Nam
 date: 2020-07-24 19:34:00 +0900
-categories: [Kotlin, Tutorial]
+categories: [Kotlin]
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 ---

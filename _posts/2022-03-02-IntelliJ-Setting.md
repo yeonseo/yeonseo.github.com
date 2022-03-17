@@ -4,7 +4,7 @@ title: 인텔리제이(IntelliJ)를 더욱 효과적으로 사용하기 위한 �
 description: ""
 tags: [Tool, IntelliJ, TIL, Today I Leaned]
 comments : true
-category : [Tool]
+category : [Tool, IntelliJ]
 ---
 
 # 별의 갯수 : 개발 효율성↑
