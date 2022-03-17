@@ -7,215 +7,460 @@ tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 ---
 
-본 포스팅은 Kotlin In Action - Dmitry Jemerov, Svetlana Isakova 책을 읽고, 기록하기 위한 용도로 작성되었습니다. 이 책의 대상 독자는 어느 정도 자바를 알고 있는 개발자를 대상으로 합니다. 서버 개발자나 안드로이드 개발자, JVM에서 실행되는 프로젝트를 구축중인 개발자들이라면 이 책이 도움이 될 것입니다.
 
 
-<img class="image fit" src="/post/images/springKotlin.png">
 
 
-# 코틀린의 함수
 
-## 컬렉션
 
-```kotlin
-// hashset
-var set = hashSetOf(1, 3, 27)
 
-// list
-var list = arrayList(1, 3, 27)
+font
 
-//map
-var map = hashMapOf(1 to "one", 3 to "three", 27 to "twenty-seven")
+https://goax.tistory.com/11
+
 ```
-
-위에서 사용한 객체들은 모두 java.util에 속하는 객체들입니다. 즉, 코틀린에서 제공하는 컬렉션 프레임워크는 자바로부터 온 것인데, 코틀린만의 컬렉션을 만들지 않은 이유는 자바 코드와 상호작용하기 쉽도록 설계했기 때문이라고 합니다.
-
-<img class="image fit" src="/post/images/2020-07-27-collections-diagram.png">
-
-
-## 함수를 호출하기 쉽게
-
-[kotlinlang - functions](https://kotlinlang.org/docs/reference/functions.html#named-arguments)
-
-
-### (1) 생성자를 오버로딩할 필요가 없음 
-
-* 알아서 인자를 하나씩 제거하며 생성자를 만들어 주기 떼문에 생성자가 없다거나 파라미터 갯수가 틀리다는 오류로부터 자유로워요!!
-
-* 파라미터 입력 시, 필드명도 입력할 수 있어서 가시성이 좋아시면서 혼동이 줄어들고 몇 번째 파라미터 값이 잘못되었다는 오류는 이제 그만!! 볼 수 있습니다.
-
-```kotlin
-fun foo(bar: Int = 0, baz: Int) { /*...*/ }
-
-foo(baz = 1) // bar는 디폴드 값인 0이 됩니다.
-```
-
-```kotlin
-fun reformat(str: String,
-             normalizeCase: Boolean = true,
-             upperCaseFirstLetter: Boolean = true,
-             divideByCamelHumps: Boolean = false,
-             wordSeparator: Char = ' ') {
-/*...*/
-}
-
-// 차례대로 입력해도 되고,
-reformat(str, true, true, false, '_')
-
-// 필드명과 함께 차례대로 입력해도 되고,
-reformat(str,
-    normalizeCase = true,
-    upperCaseFirstLetter = true,
-    divideByCamelHumps = false,
-    wordSeparator = '_'
-)
-
-// 넣고 싶은 필드값만 지정해서 입력해도 됩니다.
-reformat(str, wordSeparator = '_')
-```
-
-
-### (2) 함수를 클래스로 감쌀 필요가 없음
-
-코틀린에서는 함수를 선언하기 위해서 클래스를 만들 필요가 없습니다. 
-
-```kotlin
-package some.package
-
-fun someFunction(...) { ... }
-```
-
-자바로 본다면, 코틀린 컴파일러가 생성하는 클래스의 이름은 함수가 들어있던 소스 파일의 이름과 대응됩니다.
-
-만약 some.kt에 위의 내용이 적혀 있었다면, 자바 소스 코드로 볼 때, 다음과 같습니다.
-
-```java
-package some.package;
-
-public class SomeKt {
-  public static someFunction(...) { ... };
+{
+    "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "hidden": false,
+    "name": "Ubuntu-18.04",
+    "source": "Windows.Terminal.Wsl",
+    "colorScheme": "One Half Dark",
+    "fontFace": "Meslo LG S for Powerline",
+    "fontSize": 10
 }
 ```
 
-### (3) 확장 함수와 확장 프로퍼티
+Oh My Zsh
+zsh를 apt-get으로 설치를 한 후 onmyzsh를 설치하겠습니다.
 
-[kotlinlang - Extensions](https://kotlinlang.org/docs/reference/extensions.html)
+ 
 
-확장 함수는 자바에서 상속을 받은 후, 오버라이드 하여 사용하는 것과 같은 개념입니다. 하지만 상속을 받거나 데코레이터 같은 디자인 패턴이 필요하지 않습니다. 
+$ sudo apt-get update
+$ sudo apt-get install zsh
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ 
 
-```kotlin
-open class Shape
+설치 후에 테마를 agnoster로 변경하면 아래 처럼 보기 좋게 변경됩니다.
 
-class Rectangle: Shape()
+vi ~/.zshrc
+ 
 
-fun Shape.getName() = "Shape"
+7 # Set name of the theme to load --- if set to "random", it will
+8 # load a random theme each time oh-my-zsh is loaded, in which case,
+9 # to know which specific one was loaded, run: echo $RANDOM_THEME
+10 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+11 ZSH_THEME="agnoster"
 
-fun Rectangle.getName() = "Rectangle"
+Powerlevel10K를 이용한 터미널 테마 꾸미기
+Windows Terminal은 설정을 이용해서 원하는 색상과 테마로 꾸밀 수 있지만! 기본으로 주어지는 테마가 너무...마음에 안든다.
+oh my zsh도 설치한 만큼, 이와 관련된 테마를 제공하는 것이 있는데 바로 Powerlevel10K라는 것이다!!
+Oh my zsh 에서 Powerlevel10K 설치하기 - Github 를 참고하자
+먼저 powerlevel10K Repository를 git clone 해온다.sudo를 붙이지 않으면 관리자 권한이 없다고 Error가 발생한다. 반드시 sudo를 붙이자.
+sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+vs code를 통해 zshrc 파일을 열어준다. code ~/.zshrc
+ZSH_THEME을 powerlevel10k/powerlevel10k로 변경한다.
+그리고 vs code를 저장하고 닫은 다음, Windows Terminal을 재시작한다.다음과 같이 나온다면 성공!
 
-fun printClassName(s: Shape) {
-    println(s.getName())
-}    
+하지만 아직 폰트 적용이 제대로 되지 않았기 때문에, 잠시 폰트 먼저 다운 받아야 한다!
 
-printClassName(Rectangle())
-```
+https://velog.io/@cyongchoi/Window-Ubuntu-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90-OH-MY-ZSH-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B03
 
-이 코드는 "Shape"를 출력합니다. Rectangle이 Shape 타입으로 만들어졌기 때문에, Shape의 getName()이 실행됩니다.
 
-다음 예제에서 다시 보면,
-```kotlin
-class Example {
-    fun printFunctionType() { println("Class method") }
+
+
+I don't believe it..
+It really fixes the problem when i right-click the .ttf and "Install for all users"
+Simple as that, after reboot all terminals looking fine with my OMZ powerlevel10k in Windows Terminal or VScode
+
+https://github.com/romkatv/powerlevel10k/#manual-font-installation
+
+
+
+소스트리 ssh 충돌 때문에 화나서 바꿈
+
+# gitkraken
+
+설치,
+로그인 - git
+
+## ssh (기존의 것 사용)
+상단 톱니바퀴 (setting) > ssh > 
+ - SSH Private Key -> 
+
+
+
+
+
+ 
+
+# query
+https://blog.leocat.kr/notes/2019/11/14/querydsl-result-handling-projection
+
+
+// 회원 조회
+fun getMemberCount(searchOptionValue: AdminMemberDto.MemberSearchOption, pageable: PageRequest): Long {
+    var baseQuery = query.select(Projections.constructor(AdminMemberDto.MemberSearchOption::class.java)).from(member, accountInfo)
+
+    baseQuery = memberSearch(baseQuery, searchOptionValue, pageable)
+
+    return baseQuery.fetchCount()
 }
 
-fun Example.printFunctionType() { println("Extension function") }
 
-Example().printFunctionType()
+
+
+
+
+# 20220308
+
+https://jh3786.tistory.com/19
+
+'_' 잘하면,, 내가 FCM 할 것 같아서,,,
+
+
+
+
+# 20220310
+
+https://gingerkang.tistory.com/127
+
+드래그 앤 드롭으로 '배너' 기능에서 사용될 예정
+
+
+
+[Vue.js] 라이브러리 없이 Drag & Drop 가능한 파일 업로드 만들기
+https://velog.io/@hgoguma_124/Vue.js-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%97%86%EC%9D%B4-Drag-Drop-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%8C%EC%9D%BC-%EC%97%85%EB%A1%9C%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+파일 업로드도 드래그 앤 드롭이라서 '_'
+
+
+
+# 20220311
+좋아 가보자고!!
+
+
+
+내가 짠 나이스 인증관련해서 문제 발생함
+
+```
+ERROR 22-03-11 10:52:59[http-nio-8888-exec-1] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.security.InvalidKeyException: No installed provider supports this key: javax.crypto.spec.SecretKeySpec] with root cause
+java.security.InvalidKeyException: No installed provider supports this key: javax.crypto.spec.SecretKeySpec
+	at java.base/javax.crypto.Cipher.chooseProvider(Cipher.java:930)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1433)
+	at java.base/javax.crypto.Cipher.init(Cipher.java:1364)
+	at com.bcg.funble.userapi.common.AES256Service.encryptedAES256(AES256Service.kt:34)
+	at com.bcg.funble.userapi.common.APIService.getSymmetricKey(APIService.kt:154)
+	at com.bcg.funble.userapi.common.APIService.certCheck(APIService.kt:47)
+	at com.bcg.funble.userapi.member.controller.MemberController.certCheck(MemberController.kt:43)
+	at com.bcg.funble.userapi.member.controller.MemberController$$FastClassBySpringCGLIB$$b2e1b9f0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bcg.funble.userapi.member.controller.MemberController$$EnhancerBySpringCGLIB$$4a75e0d5.certCheck(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor316.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 ```
 
-결과 값이 "Extension function"로 나타날 것 같지만, 실제로는 "Class method"가 출력됩니다. "kotlinlang.org"에서는 이것을 <strong>"member always wins."</strong> 이라고 하는데요, 클래스가 가지고 있는 함수가 항상 우위를 가집니다.
+내가 생각하는 이유는
+* 대표님이 다른 사람의 정보로 인증요청을 했었음
+* 그 정보가 기기에 남았고
+* 다시 대표님이 인증을 요청할 때 정보가 충돌됨
 
-* 클래스에 멤버함수가 있고,
-* 확장함수와 멤버함수가 이름이 같고,
-* 확장함수와 멤버함수가 같은 파라미터를 가지면,
 
--> <strong style="color: red">"member always wins."</strong>
+팀장님은 우선 내 코드에서 싱글톤인데 전역변수를 사용하는 코드는 좋지 못하다고 알려주심
 
-다음과 같이 다른 파라미터 값을 가지는 경우라면, 
+* 문제의 이유가 싱글톤 때문인거라고 추측하시는듯
+왜 발생했는지 모르겠지만
 
-```kotlin
-class Example {
-    fun printFunctionType() { println("Class method") }
+
+* service 빈 생성 => 싱글톤
+* 전역변수를 사용하면, 서비스 호출 과정에서 문제가 생길 수 있음.
+* 완벽하게 제어하기가 힘드므로 이를 없애는 것을 제안해주셨음
+
+
+## 싱글톤에 대해서 알아보자
+
+- 싱글톤 패턴(Singleton pattern)을 쓰는 이유와 문제점
+https://jeong-pro.tistory.com/86
+
+싱글톤 패턴의 문제점
+
+싱글톤 인스턴스가 너무 많은 일을 하거나 많은 데이터를 공유시킬 경우 다른 클래스의 인스턴스들 간에 결합도가 높아져 "개방-폐쇄 원칙" 을 위배하게 된다. (=객체 지향 설계 원칙에 어긋남)
+
+따라서 수정이 어려워지고 테스트하기 어려워진다.
+
+또한 멀티쓰레드환경에서 동기화처리를 안하면 인스턴스가 두개가 생성된다든지 하는 경우가 발생할 수 있음
+
+개발을 할때 항상 들어온 goto는 쓰면 안돼! 전역 객체는 안 좋은거야! 라는 말 처럼 꼭 필요한 경우아니면 지양해야함. // 적절히 잘 쓰면 아주 좋음, (그게 어렵지)
+
+https://alwayspr.tistory.com/11
+스프링 빈은 Thread-safe 할까?
+
+이번에는 상태를 가지는(전역변수가 있는) 싱글톤 객체를 통해 덧셈을 하는 프로그램을 만들어보겠습니다.
+
+public class Singleton {
+
+    int num;
+
+
+    private static Singleton singleton = new Singleton();
+
+    private Singleton(){}
+
+    public static Singleton getInstance(){
+        return singleton;
+    }
+
+    public int add(){
+        return ++ num;
+    }
+
 }
 
-fun Example.printFunctionType(i: Int) { println("Extension function") }
+class AddTest{
+    public static void main(String[] args) {
+        Singleton singleton = Singleton.getInstance();
 
-Example().printFunctionType(1)
+        int[] array = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
+
+        for(int i : array) {
+
+            new Thread(() -> {
+                System.out.println(singleton.add());
+            }).start();
+
+        }
+    }
+}
+
+쓰레드를 통해 객체의 내부 상태를 변경시키고, 출력을 합니다.
+
+
+
+
+
+여기서 주목할 점은 데이터에 문제가 발생했습니다. 1 ~ 20이 나와야 하는데 1이 두번 나오고 20이 빠졌습니다.
+
+하나의 공유자원을 놓고 여러 개의 쓰레드가 읽기/쓰기를 하면서 데이터 조작 중 문제가 발생한 거죠. (Race Condition)
+
+이 경우는 Thread-safe 하지 못합니다.
+
+
+
+본인이 짠 코드를 한번 생각해보면 스프링 빈(@Controller, @Service, @Repository, @Component 어노테이션이 달린 객체 등)의 전역변수에는 주로 스프링 빈과 같은 불변 객체들이 있지 VO, DTO, Map 같은 가변 객체가 존재하지 않을 겁니다. 만약 있다면 synchronized 키워드나 concurrent 패키지의 클래스들을 사용하여 동시성 문제를 해결했을 것입니다. 그리고 스프링 빈 사이의 데이터를 주고받을 때에는 스프링빈의 상태를 변경 시키는 것이 아니라 메소드의 파라미터를 이용했을 것이고요. 자신도 모르게 관행에 따라 개발을 하다 보니 Thread-safe 하게 개발 한 것 같습니다.
+
+
+
+결론은 스프링 빈을 상태를 변경할 수 있게 만든다면 Thread-safe 하지 않습니다.
+
+
+
+
+
+Spring Singleton
+https://dahye-jeong.gitbook.io/spring/spring/2021-01-19-spring-singleton
+Singleton Registry / Singleton Pattern 주의점
+객체 인스턴스를 하나만 생성해서 공유하는 싱글톤 방식은 여러 클라이언트가 하나의 같은 객체 인스턴스를 공유하기 때문에 싱글톤 객체는 상태를 유지 (stateful)하게 설계하면 안된다. 무상태(stateless)로 설계해야 한다!
+특정 클라이언트에 의존적인 필드가 있으면 안된다.
+특정 클라이언트가 값을 변경할 수 있는 필드가 있으면 안된다!
+가급적 읽기만 가능해야 한다.
+필드 대신에 자바에서 공유되지 않는, 지역변수, 파라미터, ThreadLocal 등을 사용해야 한다.
+
+
+
+
+
+
+
+## 그럼 어떻게 짜는게 좋은가
+
+1. class entity로 넘겨주자
+
+
+
+
+코틀린(Kotlin)의 Companion object는 단순히 자바(Java)의 static 키워드를 대체하기 위해서 탄생했을까요? 이 갑작스러운 질문은 코틀린에서 왜 static을 안 쓰게 되었는지 이해하는 데 큰 도움이 될 수 있습니다.
+https://www.bsidesoft.com/8187
+
+
+
+
+
+
+# 20220314
+
+## 추상 data class는 toDto  리턴값으로 사용될 수 없다
+
+
+C:\Users\PC\Documents\git\project\FUNBLE\funble_backend\module-admin-api\build\tmp\kapt3\stubs\main\com\bcg\funble\moduleadminapi\member\mapper\AdminMemberMapper.java:18: error: The return type AdminMemberDto.MemberBase is an abstract class or interface. Provide a non abstract / non interface result type or a factory method.
+    public abstract com.bcg.funble.moduleadminapi.member.dto.AdminMemberDto.MemberBase toDto(@org.jetbrains.annotations.NotNull()
+
+
+```
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+interface AdminMemberMapper: EntityMapper<AdminMemberDto.MemberList, Member> {
+    override fun toEntity(dto: AdminMemberDto.MemberList): Member
+    @Mappings(
+        Mapping(target="age", expression="java(entity.getAge())"),
+        Mapping(target="userType", expression="java(entity.getUserType())"),
+        Mapping(source="investPersonCod", target = "invest", qualifiedByName = ["invest"]),
+//        Mapping(source="accountInfo", target = "accountNumber", qualifiedByName = ["accountNumber"]),
+        Mapping(source="customerTendencyEvalCod", target = "customerTendency", qualifiedByName = ["customerTendency"])
+    )
+    override fun toDto(entity: Member): AdminMemberDto.MemberList
+    //     override fun toDto(entity: Member): AdminMemberDto.MemberBase
+
+
+    fun listToMemberDto(list: List<Member>): List<AdminMemberDto.MemberList>
+    fun listToCorpMemberDto(list: List<Member>): List<AdminMemberDto.CorpMemberList>
+
+    
+    @Mappings(
+            Mapping(source="investPersonCod", target = "invest", qualifiedByName = ["invest"]),
+            Mapping(source="customerTendencyEvalCod", target = "customerTendency", qualifiedByName = ["customerTendency"])
+    )
+    fun toMemberDetailResponseDto(entity: Member): AdminMemberDto.MemberDetailResponse?
+
+    companion object {
+        @JvmStatic
+        @Named("invest")
+        fun invest(investPersonCod: InvestPersonCode?): List<String> {
+            val result = mutableListOf<String>()
+            result.add(investPersonCod.toString())
+            investPersonCod?.let { result.add(it.description) }
+            return result
+        }
+
+        @JvmStatic
+        @Named("customerTendency")
+        fun customerTendency(customerTendencyEvalCod: CustomerTendencyEvalCode?): List<String> {
+            val result = mutableListOf<String>()
+            result.add(customerTendencyEvalCod.toString())
+            customerTendencyEvalCod?.let { result.add(it.description) }
+            return result
+        }
+
+        @JvmStatic
+        @Named("accountNumber")
+        fun accountNumber(accountInfo: AccountInfo?): String? {
+            return accountInfo?.accountNo
+        }
+    }
+}
+
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+interface AdminSubscribeHistoryMapper: EntityMapper<AdminMemberDto.DetailResponse, SubscribeHistory> {
+    override fun toEntity(dto: AdminMemberDto.DetailResponse): SubscribeHistory
+
+    @Mapping(source="subscribeInfo", target = "status", qualifiedByName = ["subscribeStatus"])
+    override fun toDto(entity: SubscribeHistory): AdminMemberDto.DetailResponse
+
+    fun subscribeHistoryListToSubscribeHistoryListDto(entity: List<SubscribeHistory>?)
+            : List<AdminMemberDto.DetailResponse>?
+
+    companion object {
+        @JvmStatic
+        @Named("subscribeStatus")
+        fun subscribeStatus(subscribeInfo: SubscribeInfo): String {
+            return subscribeInfo.getStatus(true)
+        }
+    }
+}
+
 ```
 
-"Extension function"이 출력됩니다. Int 값의 파라미터를 가진 확장함수가 실행이 된 것이죠. ✨
-확장 함수를 만들 때는, 멤버 함수가 더 우선되어서 실행된다는 것을 주의해야 겠습니다.
 
 
-## 문자열 다루기
 
-### (1) 문자열 나누기
+## Mapping
+@Mappings(
+            Mapping(source="investPersonCod", target = "invest", qualifiedByName = ["invest"]),
+            Mapping(source="customerTendencyEvalCod", target = "customerTendency", qualifiedByName = ["customerTendency"])
+    )
+    fun toMemberDetailResponseDto(entity: Member): AdminMemberDto.MemberDetailResponse?
 
-```kotlin
-// '.'을 이스캐이프 하는 경우
->>> println("13.58-5".split("\\.|-".toRegex))
+    companion object {
+        @JvmStatic
+        @Named("invest")
+        fun invest(investPersonCod: InvestPersonCode?): List<String> {
+            val result = mutableListOf<String>()
+            result.add(investPersonCod.toString())
+            investPersonCod?.let { result.add(it.description) }
+            return result
+        }
 
-// 여러 문자열을 지정하는 경우
->>> println("13.58-5".split(".","-"))
+        @JvmStatic
+        @Named("customerTendency")
+        fun customerTendency(customerTendencyEvalCod: CustomerTendencyEvalCode?): List<String> {
+            val result = mutableListOf<String>()
+            result.add(customerTendencyEvalCod.toString())
+            customerTendencyEvalCod?.let { result.add(it.description) }
+            return result
+        }
 
-// 두가지 모두 같은 결과값을 볼 수 있습니다.
-[13, 58, 5]
+        @JvmStatic
+        @Named("accountNumber")
+        fun accountNumber(accountInfo: AccountInfo?): String? {
+            return accountInfo?.accountNo
+        }
+    }
+
+
+
 ```
+class AdminMemberDto {
+    abstract class MemberBase(
+            var investPersonUniqueNo: String?,
+            var individualCorpCod: String?,
+            var htsId: String? = null,
+            var name: String? = null,
+            var invest:  List<String>? = null,
+            var customerTendency: List<String>? = null, // 투자 성향
+            var memberOpenYn: String? = null,
+            var createdAt: String? = null
+    )
 
-### (2) 문자열 함수들 (ex 파일 경로명 분리하기)
+    data class MemberList (
+            var accountInfo: AccountInfoAdminListDto? = null,
+            var phoneNo: String?,
+            var age: Int? = null, // 회원 만 연령 나이
+            var userType: String? = null, // 회원 타입
+            var accountNoOpenYn: String? = null, // 계좌 개설 여부
+            var allianceAccountNoRegisterYn: String? = null, // 제휴 계좌 연동 유무
+            var investLimitAmt: String? = null, // 연간 투자 한도
+    ): MemberBase(null,null,null,null,null,null,null,null)
 
-[kotlinlang - text](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/)
 
-substringBeforeLast()와 substringAfterLast()를 잘 사용하면, 정규식을 사용하지 않고 파일경로와 파일명, 확장자를 쉽게 나눌 수 있습니다.
 
-* path : "/user/dir/folder/a<strong style="color:red">/</strong>test<strong style="color:blue">.</strong>txt"
+    data class MemberDetailResponse (
+            var accountInfo: AccountInfoAdminListDto? = null,
+            var phoneNo: String?,
 
-```kotlin
-// 1. "/"를 기준으로 나눔
-fun parsePath(path: String) {
-  var dir = path.substringBeforeLast("/")
-  var fileAndType = path.substringAfterLast("/")
+            var accountNoOpenYn: String? = null, // 계좌 개설 여부
+            var allianceAccountNoRegisterYn: String? = null, // 제휴 계좌 연동 유무
+            var certificationRegisterYn: String? = null, // 인증서등록여부 - Y.등록,N.미등록
 
-  // 2. "."를 기준으로 나눔
-  var filename = fileAndType.substringBeforeLast(".")
-  var fileType = fileAndType.substringAfterLast(".")
+            var investTendencyDiagnosisYn: String? = null, // 투자성향진단여부 - Y.진단 N.미진단 (KYC)
+            var investLimitAmt: String? = null, // 연간 투자 한도
+
+            var pushReceiveAgreeYn: String? = null, // PUSH수신동의여부
+            var textReceiveAgreeYn: String? = null, // 문자수신동의여부
+            var emailReceiveAgreeYn: String? = null, // 이메일수신동의여부
+//
+            var subscribeHistory: List<DetailResponse>? = null,
+            var totalSubscribeAmt: BigDecimal? = null,
+
+            /**
+             *
+             * SKS와는 무관한 법인회원을 등록하는 과정
+            1. 법인관리자가 SKS 지점을 방문하여 계좌개설(공동인증서, HTS-ID 등을 발급 받음)
+            2. 법인관리자가 SKS HTS에 접속해서 ID를 초기화 하고 공동인증서를 등록하는 등 온라인거래 가능한 상태를 만듬
+            3. 펀블앱에 접속해서 기본적인 법인회원정보를 입력, 사업자등록증을 업로드하여 회원가입 신청(신청 상태)
+            4. 펀블관리자가 입력한 회원가입정보를 확인하고 수작업으로 등록을 진행(등록 상태)
+            5. 법인관리자에게 회원등록 완료를 카카오톡이나 이메일 등을 통해 통보하면 법인관리자가 앱에 접속하여 공동인증서로 로그인을 실행
+             *
+             */
+    ): MemberBase(null,null,null,null,null,null,null,null)
 }
 ```
 
-### 3중 문자열
-
-```kotlin
-val text = """|  ☆
-             >| ☆
-             >| *.
-             >|   +
-             >| .*"""
-
->>> println(text.trimMargin(">")) // trimMargin: 특별한 문자를 포함한 직전의 공백을 제거
-// 출력결과는 아래와 같습니다 👍👍
-|  ☆
-| ☆
-| *.
-|   +
-| .*
-```
-
-
-3중 문자열은 역슬래시"\"를 이용한 이스케이프를 할 필요가 없습니다. 예를 들어, 경로를 나타낼 때 "\\user\\dir\\..."과 같이 나타내야 했습니다. 하지만 3중 문자열을 사용하면 간단히 나타낼 수 있습니다. 
-
-```kotlin
-var path = """C:\Users\dir\folder\test.txt"""
-// 👍👍👍👍👍
-```
-
-
-불필요한 코드를 줄이기 위해서 노력했다고 하던데 확실히 코드량도 그렇지만 구현하는 방법 자체가 깔끔하다는 생각이 듭니다. 조금 낯설어서 적응을 해야겠지만요.

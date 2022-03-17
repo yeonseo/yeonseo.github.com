@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Book] Kotlin In Action 정리 03편 - 코틀린의 클래스, 객체, 인터페이스 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
+title: 코틀린의 클래스, 객체, 인터페이스 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
 description: "Kotlin In Action - Dmitry Jemerov, Svetlana Isakova를 읽고 정리하기"
 tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true

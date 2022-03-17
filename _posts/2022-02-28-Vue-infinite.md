@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [ERROR] Vue - infinite redirection 문제
+title: Vue - infinite redirection 문제
 description: ""
-tags: [vue, Web, Frontend, TIL, Today I Leaned]
+tags: [vue, Web, ERROR, Frontend, TIL, Today I Leaned]
 comments : true
 category : [Vue]
 ---

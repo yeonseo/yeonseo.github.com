@@ -1,5 +1,5 @@
 ---
-title: Kotlin In Action 정리 01편 - 코틀린이란? (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
+title: 코틀린이란? (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
 author: Yeonseo Nam
 date: 2020-07-16 19:34:00 +0900
 categories: [Kotlin, Tutorial]

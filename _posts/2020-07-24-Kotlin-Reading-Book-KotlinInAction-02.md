@@ -1,5 +1,5 @@
 ---
-title: Kotlin In Action 정리 02편 - 코틀린의 함수 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
+title: 코틀린의 함수 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
 author: Yeonseo Nam
 date: 2020-07-24 19:34:00 +0900
 categories: [Kotlin, Tutorial]
