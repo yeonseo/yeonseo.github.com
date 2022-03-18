@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 스프링부트 (Spring) Get 사용 시 Body관련
+title: 스프링부트 (Sptring Boot) Get 사용 시 Body관련
 description: ""
-tags: [Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
+tags: [Sptring Boot, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Spring, Spring Data JPA]
 ---
