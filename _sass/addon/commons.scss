@@ -53,19 +53,45 @@ body {
   font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
 
+.space-item-1 {
+    padding: 1rem;
+}
+
+
+.space-item-2 {
+    padding: 2rem;
+}
+
+.space-item-3 {
+    padding: 3rem;
+}
+
+.space-item-4 {
+    padding: 4rem;
+}
+
+.space-item-5 {
+    padding: 5rem;
+}
+
+.space-item-6 {
+    padding: 6rem;
+}
+
 /* --- Typography --- */
 
 h1 {
   @extend %heading;
-
+  //   @extend %anchor;
+  padding-top: 5.5rem;
   font-size: 1.8rem;
 }
 
 h2 {
   @extend %heading;
   @extend %section;
-  @extend %anchor;
-
+//   @extend %anchor;
+  padding-top: 4.5rem;
   font-size: 1.4rem;
 }
 
