@@ -25,7 +25,7 @@ Mongo DB란 NoSQL의 종류 중 하나이다.
 가용성 : 여러 대의 백업 서버 구성이 가능하여 장애 발생 시에도 무중단 서비스가 가능합니다.
 
 
-<p class="space-item-3"/>
+<div class="space-item-3"></div>
 
  <font size="5">그럼 이제 Spring Boot에 Mongo DB를 사용해보자</font>
 
