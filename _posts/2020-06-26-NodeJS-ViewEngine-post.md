@@ -25,7 +25,7 @@ View engine을 활용한 응답처리
 ---
 
 
-![nodejs_logo](/post/images/nodejs_logo.jpg)
+![nodejs_logo](/post/images/logo/nodejs_logo.jpg)
 # Node 
 
 ## EJS

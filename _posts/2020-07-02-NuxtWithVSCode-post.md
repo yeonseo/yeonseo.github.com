@@ -24,7 +24,7 @@ Visual Studio Code에서 Nuxt JS를 디버깅 할 수 있도록 환경설정을 
 ---
 
 
-![nuxtjs_logo](/post/images/NuxtJS_Logo.png)
+![nuxtjs_logo](/post/images/logo/NuxtJS_Logo.png)
 
 # Debugging with Chrome 🐣
 

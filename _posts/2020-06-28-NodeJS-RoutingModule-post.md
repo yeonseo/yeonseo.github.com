@@ -23,7 +23,7 @@ comments : true
 ---
 
 
-![nodejs_logo](/post/images/nodejs_logo.jpg)
+![nodejs_logo](/post/images/logo/nodejs_logo.jpg)
 
 # NodeJS Routing 모듈화
 [expressjs - router](http://expressjs.com/ko/api.html#router)

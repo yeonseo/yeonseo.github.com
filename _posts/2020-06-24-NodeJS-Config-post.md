@@ -29,7 +29,7 @@ NPM Project 시작하기
 ---
 
 
-![nodejs_logo](/post/images/nodejs_logo.jpg)
+![nodejs_logo](/post/images/logo/nodejs_logo.jpg)
 
 # NodeJS
 

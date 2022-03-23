@@ -23,7 +23,7 @@ DB는 RDS와 Nosql을 사용하기로 했습니다. RDB는 Mysql을 사용하고
 ---
 
 
-![nodejs_logo](/post/images/nodejs_logo.jpg)
+![nodejs_logo](/post/images/logo/nodejs_logo.jpg)
 
 # NodeJS에서 Mysql 연동하기 
 [expressjs - mysql](http://expressjs.com/ko/guide/database-integration.html#mysql)

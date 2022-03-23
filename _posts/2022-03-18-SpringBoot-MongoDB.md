@@ -4,7 +4,7 @@ title: 스프링부트(Spring Boot)에서 Mongo DB 사용하기
 description: ""
 tags: [Sptring Boot, Spring, Kotlin, Web, Backend, Mongo DB, TIL, Today I Leaned]
 comments : true
-category : [Sptring Boot, Mongo DB]
+category : [Sptring, Mongo DB]
 ---
 
 > <https://jsonobject.tistory.com/559> Spring Boot, Spring Data MongoDB, Querydsl로 타입 세이프 쿼리 작성하기
@@ -85,3 +85,4 @@ Query()
 ```
 
 Spring + MongoDB 의 조합을 이용하고 계시다면 Kotlin 을 도입하는것을 고려해볼만한 이유가 될 것 같다.
+

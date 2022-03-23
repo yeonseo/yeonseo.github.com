@@ -20,7 +20,7 @@ comments : true
 ---
 
 
-![nuxtjs_logo](/post/images/NuxtJS_Logo.png)
+![nuxtjs_logo](/post/images/logo/NuxtJS_Logo.png)
 
 # NuxtJS 설치
 [NuxtJS - installation](https://ko.nuxtjs.org/guide/installation/)
