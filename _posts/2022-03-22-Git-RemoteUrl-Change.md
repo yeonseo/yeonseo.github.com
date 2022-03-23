@@ -16,7 +16,7 @@ category : [Sptring, Spring Data JPA]
 
 <br class="space-item-3"/>
 
-# source Tree
+# Source Tree에서 Git origin url 변경
 
 1. 소스트리 상단 오른편에 '설정'에 진입
 2. 원격 > origin 클릭
@@ -37,7 +37,7 @@ category : [Sptring, Spring Data JPA]
 
 <br class="space-item-3"/>
 
-# Git Bash로 Git remote U 바꾸기
+# Git Bash로 Git remote Url 바꾸기
 
 ```Console
 // 현재 설정 확인

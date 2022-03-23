@@ -25,13 +25,7 @@ Mongo DB란 NoSQL의 종류 중 하나이다.
 가용성 : 여러 대의 백업 서버 구성이 가능하여 장애 발생 시에도 무중단 서비스가 가능합니다.
 
 
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<p class="space-item-3"/>
 
  <font size="5">그럼 이제 Spring Boot에 Mongo DB를 사용해보자</font>
 
@@ -65,7 +59,7 @@ FINISH로 끝!
 
 
 
-
+<p class="space-item-6"/>
 
 ### 문제 발생
 cause: org/springframework/aot/gradle/springaotgradleplugin has been compiled by a more recent version of the java runtime (class file version 55.0), this version of the java runtime only recognizes class file versions up to 52.0
@@ -85,6 +79,7 @@ cause: org/springframework/aot/gradle/springaotgradleplugin has been compiled by
 여기서 여러가지 버전이 간혹 올라와서 문제를 자주 일으키더라구요. 저는 JAVA버전이 여러개 설치 되어 있어서 항상 이 곳을 먼저 확인해주는 편입니다. 이 프로젝트에서는 11 버전을 사용하고 있으니, 이외의 버전은 모두 '-'를 눌러 삭제해 주었습니다.
 
 
+<p class="space-item-3"/>
 
 # Monogo BD 사용시 주의할 점
 
@@ -125,7 +120,8 @@ Pod의 가용성을 보증하는 역할입니다.
 </div>
 </details>
 
-<br class="space-item-6"/>
+<p class="space-item-3"/>
+
 
 > <https://csy7792.tistory.com/346> [Spring] Kotlin 을 이용하여 MongoDB Query를 Type-safe 하게 작성하기
 
