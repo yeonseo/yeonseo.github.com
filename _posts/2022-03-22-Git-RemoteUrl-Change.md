@@ -14,7 +14,7 @@ category : [Sptring, Spring Data JPA]
 
 <https://hyeon9mak.github.io/github-personal-access-token/>
 
-<br class="space-item-3"/>
+<div class="space-item-3"></div>
 
 # Source Tree에서 Git origin url 변경
 
@@ -29,13 +29,13 @@ category : [Sptring, Spring Data JPA]
 
 ![source-tree-url-change](/post/images/2022-03-22-git-url-change4.png)
 
-<br class="space-item-3"/>
+<div class="space-item-3"></div>
 
 # Fork 에서 Git origin url 변경
 
 사실 제대로 방법을 찾지 못해서, 아래의 커멘드로 변경하는 방법을 이용해 변경시도를 했다.
 
-<br class="space-item-3"/>
+<div class="space-item-3"></div>
 
 # Git Bash로 Git remote Url 바꾸기
 
@@ -52,11 +52,11 @@ $ git remote set-url origin https://yeonseo:변경변경test입니다@github.com
 
 /블라블라_변경된/깃 -> 저장소위치 넣는다.
 
-<br class="space-item-3"/>
+<div class="space-item-3"></div>
 
 ![source-tree-url-change](/post/images/2022-03-22-git-url-change1.png)
 
-<br class="space-item-3"/>
+<div class="space-item-3"></div>
 
 ▽▽▽▽ 변경된 URL 확인 ▽▽▽▽
 

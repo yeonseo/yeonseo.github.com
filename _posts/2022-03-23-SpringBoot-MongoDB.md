@@ -59,7 +59,7 @@ FINISH로 끝!
 
 
 
-<p class="space-item-6"/>
+<div class="space-item-3"></div>
 
 ### 문제 발생
 cause: org/springframework/aot/gradle/springaotgradleplugin has been compiled by a more recent version of the java runtime (class file version 55.0), this version of the java runtime only recognizes class file versions up to 52.0
@@ -79,7 +79,7 @@ cause: org/springframework/aot/gradle/springaotgradleplugin has been compiled by
 여기서 여러가지 버전이 간혹 올라와서 문제를 자주 일으키더라구요. 저는 JAVA버전이 여러개 설치 되어 있어서 항상 이 곳을 먼저 확인해주는 편입니다. 이 프로젝트에서는 11 버전을 사용하고 있으니, 이외의 버전은 모두 '-'를 눌러 삭제해 주었습니다.
 
 
-<p class="space-item-3"/>
+<div class="space-item-3"></div>
 
 # Monogo BD 사용시 주의할 점
 
@@ -117,10 +117,12 @@ Pod의 갯수를 모니터링 하다가, 임의의 이유로 인해 Pod가 삭�
 Pod의 가용성을 보증하는 역할입니다.
 
 > <https://artist-developer.tistory.com/34> [Kubernetes] 쿠버네티스 ReplicaSet
+
 </div>
 </details>
 
-<p class="space-item-3"/>
+
+<div class="space-item-3"></div>
 
 
 > <https://csy7792.tistory.com/346> [Spring] Kotlin 을 이용하여 MongoDB Query를 Type-safe 하게 작성하기
