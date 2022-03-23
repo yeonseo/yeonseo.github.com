@@ -88,12 +88,7 @@ cause: org/springframework/aot/gradle/springaotgradleplugin has been compiled by
 MongoDB 로컬 인스턴스 실행
 아래는 예제를 실행하기 위한 목적의 MongoDB 로컬 인스턴스를 실행하는 예이다. (자신이 선호하는 다른 방법으로 실행해도 무방하다.)
 
-MongoDB 도커 컨테이너를 실행
-```
-$ docker run -d --name mongodb -p 27017:27017 mongo
-```
 만약, Spring Data MongoDB가 제공하는 @Transactional을 사용하려면 인스턴스가 레플리카 셋으로 구성되어야 한다. Docker Compose를 이용하여 레플리카 셋을 구성하는 방법은 본 블로그의 이 글을 참고한다.
-
 
 
 <details>
