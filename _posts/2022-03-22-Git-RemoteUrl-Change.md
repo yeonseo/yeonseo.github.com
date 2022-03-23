@@ -1,6 +1,6 @@
 ---
 layout: post
-title: title
+title: Git origin url 변경하기 (소스트리, Fork, Git Bash)
 description: ""
 tags: [Sptring Boot, Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
@@ -14,9 +14,7 @@ category : [Sptring, Spring Data JPA]
 
 <https://hyeon9mak.github.io/github-personal-access-token/>
 
-<br/>
-<br/>
-<br/>
+<br class="space-item-3"/>
 
 # source Tree
 
