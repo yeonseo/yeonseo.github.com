@@ -8,7 +8,7 @@ comments : true
 ---
 
 
-<img class="image fit" src="/post/images/springKotlin.png">
+<img class="image fit" src="/post/images/logo/springKotlin.png">
 
 
 # Spring Security 설정하기

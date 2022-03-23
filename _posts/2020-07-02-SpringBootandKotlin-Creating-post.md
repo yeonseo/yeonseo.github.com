@@ -11,7 +11,7 @@ Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과�
 
 <br/><br/><br/><br/><br/>
 
-<img class="image fit" src="/post/images/springKotlin.png">
+<img class="image fit" src="/post/images/logo/springKotlin.png">
 
 
 ---
