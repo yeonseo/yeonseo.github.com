@@ -2,9 +2,9 @@
 layout: post
 title: Git origin url 변경하기 (소스트리, Fork, Git Bash)
 description: ""
-tags: [Sptring Boot, Spring, Kotlin, Web, Backend,TIL, Today I Leaned]
+tags: [Git, TIL, Today I Leaned]
 comments : true
-category : [Sptring, Spring Data JPA]
+category : [Git]
 ---
 
 
