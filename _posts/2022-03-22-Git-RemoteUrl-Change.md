@@ -33,7 +33,7 @@ Git URL을 사용하기 위해서는 다음과 같이 준비물이 필요합니�
 https://${git_id}:${access_tokens}@github.com/${git_repository_dir}/${git_repository}.git
 
 // 예시
-https://yeonseo:Test1234!@#$Test1234!@#$@github.com/yeonseo/test_git_url.git
+https://yeonseo:Test1234!#$Test1234!#$*&^@github.com/yeonseo/test_git_url.git
 ```
 
 <div class="space-item-6"></div>
