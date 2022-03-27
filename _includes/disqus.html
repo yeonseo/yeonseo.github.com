@@ -17,7 +17,7 @@
     disqusConfig: function() {
       this.page.title = '{{ page.title }}';
       this.page.url = '{{ page.url | absolute_url }}';
-      this.page.identifier = '{{ page.url }}';
+      this.page.identifier = '{{ page.url | absolute_url }}';
     }
   };
 
