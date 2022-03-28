@@ -5,6 +5,9 @@ date: 2020-07-14 19:34:00 +0900
 categories: [etc]
 tags: [Sptring Boot, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 

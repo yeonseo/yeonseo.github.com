@@ -5,6 +5,9 @@ date: 2019-08-20 19:34:00 +0900
 categories: [Java]
 tags: [call by value, call by reference, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 * Development Env.
 * post date : 2019. 08. 20

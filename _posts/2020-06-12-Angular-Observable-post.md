@@ -5,6 +5,9 @@ date: 2020-06-12 19:34:00 +0900
 categories: [Tutorial, Django & Angular]
 tags: [Angular, TypeScript, Observabel, Frontend, Web, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 서버에 요청을 보낼 시, 발행할 수 있는 에러는 여러 가지가 있습니다. 회원가입을 하는데 서버에서 필요한 데이터는 ID, password, email인데 사용자가 ID와 password만 적고 email이 귀찮아서 적지 않는다면 에러를 뱉어내죠. 사용자 입장에선 화면이 아무것도 변하지 않고 회원가입도 안 되기 때문에 무엇이 잘못된지 인지하지 못합니다. 또, 게시물을 작성할 때도 같습니다. 제목과 내용이 필요한데, 제목을 적지 않았을 경우 적절한 조치를 취해주지 않으면 사용자는 무엇을 개선해야할지 정확히 모르기 때문에 제목을 입력하라고 알려주어거나 코드 상에서 기본값을 정해주어야 하죠.

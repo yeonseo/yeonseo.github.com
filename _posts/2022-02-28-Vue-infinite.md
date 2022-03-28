@@ -5,6 +5,9 @@ description: ""
 tags: [vue, Web, ERROR, Frontend, TIL, Today I Leaned]
 comments : true
 category : [Frontend, Vue]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 # 에러 기록

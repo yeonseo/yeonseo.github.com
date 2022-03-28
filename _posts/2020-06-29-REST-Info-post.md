@@ -5,6 +5,9 @@ date: 2020-06-29 19:34:00 +0900
 categories: [Web]
 tags: [REST, Web, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 

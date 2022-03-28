@@ -5,6 +5,9 @@ date: 2021-11-12 17:30:00 +0900
 categories: [ReactNative, Tutorial]
 tags: [ReactNative, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 카카오 로그인을 구현하면서, 최근에 발생한 이슈때문에 kotlin debug Error가 발생했었다. 이 문제에 대해서 Readme.md에 수정반영되지 않아서,, 나와 같은 삽질을 줄어들길 바라며!

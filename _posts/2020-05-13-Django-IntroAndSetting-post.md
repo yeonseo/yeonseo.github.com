@@ -5,6 +5,9 @@ date: 2020-05-13 19:34:00 +0900
 categories: [Tutorial, Django & Angular]
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 * Development Env.
 * post date : 2020. 05. 13

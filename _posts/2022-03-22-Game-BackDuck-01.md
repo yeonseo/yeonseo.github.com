@@ -5,6 +5,9 @@ description: 우리 귀여운 백덕이를 게임 주인공으로 만들어보�
 tags: [게임만들기, 유니티, Unity, TIL, Today I Leaned]
 comments : true
 category : [ToyProject, Game]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 # 귀여웠던 백덕이..

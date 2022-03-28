@@ -5,6 +5,9 @@ date: 2020-06-24 19:34:00 +0900
 categories: [NodeJS]
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 

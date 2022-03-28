@@ -5,6 +5,9 @@ date: 2020-07-01 19:34:00 +0900
 categories: [Frontend, NuxtJS]
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 <br/><br/><br/><br/><br/>

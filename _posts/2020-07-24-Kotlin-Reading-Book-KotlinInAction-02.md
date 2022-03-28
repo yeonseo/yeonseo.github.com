@@ -5,6 +5,9 @@ date: 2020-07-24 19:34:00 +0900
 categories: [Kotlin]
 tags: [Sptring Boot, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 본 포스팅은 Kotlin In Action - Dmitry Jemerov, Svetlana Isakova 책을 읽고, 기록하기 위한 용도로 작성되었습니다. 이 책의 대상 독자는 어느 정도 자바를 알고 있는 개발자를 대상으로 합니다. 서버 개발자나 안드로이드 개발자, JVM에서 실행되는 프로젝트를 구축중인 개발자들이라면 이 책이 도움이 될 것입니다.

@@ -5,6 +5,9 @@ date: 2019-08-21 19:13:00 +0900
 categories: [Java]
 tags: [constructor, overload, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 * Development Env.
 * post date : 2019. 08. 21

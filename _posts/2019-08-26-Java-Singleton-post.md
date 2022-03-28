@@ -5,6 +5,9 @@ date: 2019-08-26 19:01:00 +0900
 categories: [Java]
 tags: [SingleTon, class, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 * Development Env.
 * post date : 2019. 08. 26

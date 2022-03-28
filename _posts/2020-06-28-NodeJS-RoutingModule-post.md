@@ -5,6 +5,9 @@ date: 2020-06-28 19:34:00 +0900
 categories: [NodeJS]
 tags: [NodeJS, Web, Backend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 페이지 별로 관리하기 위해서 Routing 모듈화를 합니다.

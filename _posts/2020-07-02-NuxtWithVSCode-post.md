@@ -5,6 +5,9 @@ date: 2020-05-13 19:34:00 +0900
 categories: [Frontend, NuxtJS]
 tags: [NuxtJS, Web, Frontend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 Visual Studio Code에서 Nuxt JS를 디버깅 할 수 있도록 환경설정을 해보겠습니다. 다른 Tool도 많지만, WebStorm에서는 코드 디버깅이 제대로 되지 않더라구요. 해결방법이 있는 것을 봤지만, VS는 기본적으로 vue와 nuxt코드를 이해했습니다. 집에서는 데스크탑과 MacOS를 사용하고 있었고, 회사에서는 데스크탑을 사용하고 있어서 chrome과 remote만 하면되는 VS로 선택했습니다. 😁

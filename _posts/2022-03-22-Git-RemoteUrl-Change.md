@@ -5,6 +5,9 @@ description: ""
 tags: [Git, TIL, Today I Leaned]
 comments : true
 category : [Git]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 깃을 사용하다가, 키체인이 만료되었을 경우 이를 암호키 설정을 바꿔줘야하는데 3대 이상의 장비로 자주 작업을 바꾸다보니 이 과정도 꽤나 피로도가 쌓이는 작업이 되버렸습니다. 그래서 Git origin URL을 변경하는 방법으로 정착했는데 꽤 편리하더라구요.

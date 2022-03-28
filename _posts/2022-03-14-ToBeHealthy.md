@@ -5,6 +5,9 @@ description: ""
 tags: [Health, TIL, Today I Leaned]
 comments : true
 category : [일기]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 최근 편두통이 심해지는 주기가 잦아지기 시작했고, 몸도 안 좋아짐을 느껴서 신경과를 찾았음

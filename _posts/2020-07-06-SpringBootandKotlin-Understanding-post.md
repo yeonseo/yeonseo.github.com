@@ -5,6 +5,9 @@ date: 2020-07-06 21:34:00 +0900
 categories: [Tutorial, Spring & Kotlin]
 tags: [Sptring Boot, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 Spring Boot + Kotlin 조합으로 진행되는 튜토리얼을 학습하는 과정을 담았습니다. Testing with JUnit 5 / Creating your own extensions / Persistence with JPA / Implementing the blog engine / Exposing HTTP API / Configuration properties

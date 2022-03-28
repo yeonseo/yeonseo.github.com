@@ -5,6 +5,9 @@ date: 2019-09-10 19:34:00 +0900
 categories: [Java]
 tags: [comparable, compareTo, Algorism, code, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 * Development Env.

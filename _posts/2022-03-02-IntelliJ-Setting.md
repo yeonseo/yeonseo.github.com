@@ -5,6 +5,9 @@ description: ""
 tags: [Tool, IntelliJ, TIL, Today I Leaned]
 comments : true
 category : [Tool, IntelliJ]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 # 별의 갯수 : 개발 효율성↑

@@ -5,6 +5,9 @@ description: ""
 tags: [Sptring Boot, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Spring, Spring Data JPA]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 Spring Boot를 사용해 웹 프로젝트를 진행하던 중, Get 요청에 Body를 담아 구현하려던 일이 있었다. 검색결과 리스트를 요청하는 서비스였는데 검색 조건이 복잡함에 따라 DTO Class로 관리하려다 보니, Get 요청안에 검색조건을 Json 형태로 보내게 되었다. Post Man에서는 정상적으로 동작하던 API 서비스가 프론트엔드를 통해 http로 요청하니 body에 담긴 데이터를 받지 못해 에러가 발생했다. 

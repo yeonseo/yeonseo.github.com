@@ -5,6 +5,9 @@ date: 2019-11-05 14:34:00 +0900
 categories: [Android]
 tags: [Android, Widget, Web, AutoCompleteTextView, Java, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 * Development Env.

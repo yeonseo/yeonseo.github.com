@@ -5,7 +5,9 @@ date: 2020-06-02 19:34:00 +0900
 categories: [Tutorial, Django & Angular]
 tags: [Angular, TypeScript, Frontend, Web, TIL, Today I Leaned]
 comments : true
-category : [Angular]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 사용자가 로그인을 성공했을 시 생성되는 Token 값을 이용해서 페이지 접근권한을 관리할 때 Interceptor라는 것을 사용한다고 들었습니다. 실제로는 localStorage에 저장한 token값을 사용하여 임시프로젝트를 수행했습니다. 나중에 Interceptor를 사용할 수도 있다고 생각되어서 코드 흐름을 파악하는 정도로만 기록해두려고 합니다.

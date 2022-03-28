@@ -5,6 +5,9 @@ date: 2019-10-29 19:34:00 +0900
 categories: [Java, etc]
 tags: [JavaFX, Java, Project, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 * Development Env.

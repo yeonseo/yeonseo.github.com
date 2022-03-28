@@ -5,7 +5,9 @@ date: 2020-05-14 19:34:00 +0900
 categories: [Tutorial, Django & Angular]
 tags: [Python, Django, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Django]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 

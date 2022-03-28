@@ -5,6 +5,9 @@ date: 2019-11-05 19:34:00 +0900
 categories: [Android]
 tags: [Android, Widget, Context, Java, TIL, Today I Leaned]
 comments : true
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 * Development Env.

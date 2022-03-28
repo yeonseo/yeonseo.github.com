@@ -5,6 +5,9 @@ description: ""
 tags: [css, FrontEnd, TIL, Today I Leaned]
 comments : true
 category : [css]
+sitemap:
+  changefreq: daily
+  priority : 1.0
 ---
 
 Tiptap 에디터로 작성된 컨텐츠를 getHTML로 받아서 저장된 게시물을 표현해보니 `<p>`태그가 빈 값일 때, 줄띄움이 적용되지 않고 있어 수정해봤습니다.
