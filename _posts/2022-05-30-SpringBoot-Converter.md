@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @Converter사용으로 간편하게 타입 변환하기
+title: Converter사용으로 간편하게 타입 변환하기
 description: ""
 tags:  [Spring Boot, Spring, Kotlin, Web, Backend, Mongo DB, TIL, Today I Leaned]
 comments : true
