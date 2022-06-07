@@ -53,7 +53,7 @@ var hopeYn: Boolean? = null // nullable 적용
 
 @Column(nullable = true, columnDefinition = "VARCHAR(1)")
 @Convert(converter = BooleanToNullYNConverter::class)
-var offerYn: Boolean? = null / nullable 적용
+var offerYn: Boolean? = null // nullable 적용
 ```
 
 오늘도 이렇게 배워감 🤗
