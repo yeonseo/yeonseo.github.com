@@ -2,9 +2,9 @@
 layout: post
 title: 스프링부트(Spring Boot)에서 Mongo DB 사용하기
 description: ""
-tags: [Sptring Boot, Spring, Kotlin, Web, Backend, Mongo DB, TIL, Today I Leaned]
+tags: [Spring Boot, Spring, Kotlin, Web, Backend, Mongo DB, TIL, Today I Leaned]
 comments : true
-category : [Sptring, Mongo DB]
+category : [Spring, Mongo DB]
 ---
 
 # NoSQL DB와 Mongo DB

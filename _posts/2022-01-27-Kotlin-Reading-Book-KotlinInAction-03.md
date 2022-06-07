@@ -2,7 +2,7 @@
 layout: post
 title: 코틀린의 클래스, 객체, 인터페이스 (Kotlin In Action - Dmitry Jemerov, Svetlana Isakova)
 description: "Kotlin In Action - Dmitry Jemerov, Svetlana Isakova를 읽고 정리하기"
-tags: [SprSptring Booting, Kotlin, Web, Backend,TIL, Today I Leaned]
+tags: [Spring Booting, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
 category : [Kotlin]
 sitemap:
