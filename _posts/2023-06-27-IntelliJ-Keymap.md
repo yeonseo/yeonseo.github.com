@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Converter사용으로 간편하게 타입 변환하기
+title: 인텔리제이(IntelliJ) 상황별 키맵 모음 (Mac)
 description: ""
 tags: [Tool, IntelliJ, TIL, Today I Leaned]
 comments : true
