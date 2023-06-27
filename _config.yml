@@ -15,9 +15,9 @@ timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: 우당탕탕 개발자                          # the main title
+title: 우당탕탕 벌크업만 성공한 개발자                          # the main title
 
-tagline: 1%는 작지만 (1.01)^365 복리는 무시못하지   # it will display as the sub-title
+tagline: 근성보다 근질이 좋아지는 4년차 개발자   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   읽거나, 보거나, 듣거나, 쓰거나
