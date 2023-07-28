@@ -16,7 +16,7 @@ sitemap:
 > 아니 개발한지 4년차나 되었는데, 이렇게나 단축키를 모를 일인가? 진짜 심각하다 심각해. 어디가서 개발자라고 말도 못 할 지경이다. 나보다 어린 chat GPT도 다 알고 았다. 너무 심각한 상황이다. 이제라도 하나씩 배워가야만 한다.
 <div class="space-item-1"></div>
 
-![are-you-dev?](../post/images/hey/what02.gif)
+![are-you-dev?](/post/images/hey/what02.gif)
 
 
 <div class="space-item-3"></div>
@@ -108,4 +108,4 @@ Override 메서드 자동완성 (Implement Methods): Ctrl + i
 
 계속 업데이트 할 예정 🤗
 
-![power-dev](../post/images/hey/power.gif)
+![power-dev](/post/images/hey/power.gif)
