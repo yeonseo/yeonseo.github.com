@@ -16,7 +16,7 @@ sitemap:
 > 아니 개발한지 4년차나 되었는데, 이렇게나 단축키를 모를 일인가? 진짜 심각하다 심각해. 어디가서 개발자라고 말도 못 할 지경이다. 나보다 어린 chat GPT도 다 알고 았다. 너무 심각한 상황이다. 이제라도 하나씩 배워가야만 한다.
 <div class="space-item-1"></div>
 
-![are-you-dev?](/post/images/hey/what02.gif)
+![are-you-dev?](../post/images/hey/what02.gif)
 
 
 <div class="space-item-3"></div>
@@ -39,6 +39,8 @@ sitemap:
 현재 파일에서 찾기 및 바꾸기: Cmd + F
 
 전체 프로젝트에서 찾기 및 바꾸기: Cmd + Shift + F
+
+리팩토링: Ctrl + t
 
 ---
 
@@ -72,6 +74,33 @@ sitemap:
 
 프로젝트에서 파일 찾기: Cmd + Shift + O
 
+---
+
+## 자동완성
+
+기본 자동완성: Ctrl + Space
+
+스마트 자동완성: Ctrl + Shift + Space
+
+코드 생성: Cmd + N
+
+변수 생성: Cmd + Opt + V
+
+매개변수 정보: 컨트롤 + P
+
+static method 자동완성: Ctrl + Space + Space
+
+getter/setter/생성자 자동완성 (Generate): Cmd + n
+
+Override 메서드 자동완성 (Implement Methods): Ctrl + i
+
+문장 완성: Cmd + Shift + Enter
+
+
+---
+
+텍스트 이동: Shift + Opt + 화살표
+
 
 <div class="space-item-3"></div>
 
@@ -79,4 +108,4 @@ sitemap:
 
 계속 업데이트 할 예정 🤗
 
-![power-dev](/post/images/hey/power.gif)
+![power-dev](../post/images/hey/power.gif)
