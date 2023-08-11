@@ -61,6 +61,8 @@ sitemap:
 
 아래는 Git 문서에서 설명하는 Git Rebase 이다. series of. 연관된 사건들을 이야기 할 때 사용되는 것이다. (땡큐 말해보카)
 
+<div class="space-item-1"></div>
+
 
 > ### [About Git rebase](https://docs.github.com/en/get-started/using-git/about-git-rebase)
 > The `git rebase` command allows you to easily change a series of commits, modifying the history of your repository. You can reorder, edit, or squash commits together.
@@ -70,6 +72,7 @@ sitemap:
 
 
 > **Warning**
+> 
 > ⚠️ Warning: Because changing your commit history can make things difficult for everyone else using the repository, it's considered bad practice to rebase commits when you've already pushed to a repository. To learn how to safely rebase on GitHub.com, see "[About pull request merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)."
 > 
 >경고: 커밋 기록을 변경하면 리포지토리를 사용하는 다른 모든 사람이 어려워질 수 있기 때문에 이미 리포지토리로 푸시했을 때 커밋을 다시 설정하는 것은 잘못된 관행으로 간주됩니다. GitHub.com 에서 안전하게 기본값을 다시 설정하는 방법은 "[About pull request merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)"를 참조하십시오
@@ -88,12 +91,16 @@ sitemap:
 ## Merge
 ![Git Merge](/post/images/2023-08-11-git-merge.png)
 
+[Merge - Git Doc](https://git-scm.com/docs/git-merge)
+
 참고로 merge는 이것 하나로 설명이 완벽하고, 더 다른 예제는 없다.
 
 <div class="space-item-3"></div>
 
 ## Rebase
 ![Git Rebase](/post/images/2023-08-11-git-rebase.png)
+
+[Rebase - Git Doc](https://git-scm.com/docs/git-rebase)
 
 Rebase에 대한 예제는 상황별로 꽤나 다양하게 제공하고 있다. 꼭 한번 들어가서 직접 본다면 이해하는데 더 큰 도움이 되리라고 생각된다.
 
