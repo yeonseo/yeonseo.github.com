@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>읽거나, 보거나, 듣거나, 쓰거나</description>
+    <link>https://yeonseo.github.io</link>
+    <atom:link href="https://yeonseo.github.io/feed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>Sat, 06 Jan 2024 00:00:00 +0900</lastBuildDate>
+	
+	<item>
+		<title>한빛 혼공자 혼공학습단 11기 - Java 1주차 ☕️</title>
+        
+        
+            <description>&lt;p&gt;&lt;img src=&quot;/post/images/2024-01-06-hongong-congratulations.png&quot; alt=&quot;gogo&quot; /&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 06 Jan 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Hongong-Java-1st-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Hongong-Java-1st-post/</guid>
+      </item>
+    
+	<item>
+		<title>Spring Boot의 업그레이드 후 Exception Handler 이슈</title>
+        
+        
+            <description>&lt;p&gt;스프링 부트는 빠른 개발 속도와 확장성으로 인해 많은 프로젝트에서 선호되는 프레임워크 중 하나이다. 그런데 이런 장점에도 불구하고, 버전을 업그레이드 할 때 여러 가지 문제에 직면하게 되는데, 그 중 예외처리와 관련해 최근에 회사 프로젝트에서도 이러한 경험을 하게 되었다. 그 경험을 공유 및 기억하고자 기록합니다. 🤖&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 24 Oct 2023 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/SpringBoot-ExceptionHandler-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/SpringBoot-ExceptionHandler-post/</guid>
+      </item>
+    
+	<item>
+		<title>Git Rebase와 Merge는 언제 사용하면 좋은가</title>
+        
+        
+            <description>&lt;h1 id=&quot;사용하게-된-계기&quot;&gt;사용하게 된 계기&lt;/h1&gt;
+&lt;p&gt;혼자 진행중인 사이드 프로젝트가 있다. 회사에 대한 정보를 조회하는 간단한 프로젝트인데, 이슈를 생성하고 RP을 통해 깃 관리를 테스트해보고 싶은 마음에 만든 프로젝트다. 급한 마음에 이슈부터 호다닥 만들어 브랜치를 생성했는데, 아뿔싸! 프로젝트 기본 설정조차 제대로 만들지 않아서 main에서 변경이 일어났다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 11 Aug 2023 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Git-Rebase-Merge-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Git-Rebase-Merge-post/</guid>
+      </item>
+    
+	<item>
+		<title>인텔리제이(IntelliJ) 상황별 키맵 모음 (Mac)</title>
+        
+        
+            <description>&lt;h1 id=&quot;인텔리제이---단축키-편&quot;&gt;인텔리제이 - 단축키 편&lt;/h1&gt;
+</description>
+        
+        <pubDate>Tue, 27 Jun 2023 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/IntelliJ-Keymap/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/IntelliJ-Keymap/</guid>
+      </item>
+    
+	<item>
+		<title>Converter사용으로 간편하게 타입 변환하기</title>
+        
+        
+            <description>&lt;h1 id=&quot;converter-란&quot;&gt;@Converter 란?&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://www.baeldung.com/spring-type-conversions&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Mon, 30 May 2022 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/SpringBoot-Converter/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/SpringBoot-Converter/</guid>
+      </item>
+    
+	<item>
+		<title>HTML 텍스트 나타낼 시, p 태그 간격주기</title>
+        
+        
+            <description>&lt;p&gt;Tiptap 에디터로 작성된 컨텐츠를 getHTML로 받아서 저장된 게시물을 표현해보니 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;태그가 빈 값일 때, 줄띄움이 적용되지 않고 있어 수정해봤습니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 25 Mar 2022 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/css-html-p-spacing/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/css-html-p-spacing/</guid>
+      </item>
+    
+	<item>
+		<title>Axios errorHandler에서 요청 다시 보내기 (feat. Refreash Token을 받아보자)</title>
+        
+        
+            <description>&lt;p&gt;로그인 Refreash Token을 적용하기 위해서 Axios errorHandler를 구현하게 되었습니다. interceptors 안에서 error 발생 시, API 서버에서 날려주는 에러 status값에 따라 대응하도록 코딩했는데, 몰랐던 개념들이 많아서 정리겸 포스팅을 합니다. 🤟&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 25 Mar 2022 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Axios-Error-Handling/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Axios-Error-Handling/</guid>
+      </item>
+    
+	<item>
+		<title>Vue3에서 Tiptap (WYSIWYG Editor) 사용하기</title>
+        
+        
+            <description>&lt;h1 id=&quot;tiptap-특징&quot;&gt;Tiptap 특징&lt;/h1&gt;
+&lt;p&gt;Headless
+It’s headless and comes without any CSS. You are in full control over markup, styling and behaviour.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 23 Mar 2022 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Vue3-Tiptap/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Vue3-Tiptap/</guid>
+      </item>
+    
+	<item>
+		<title>스프링부트(Spring Boot)에서 Mongo DB 사용하기</title>
+        
+        
+            <description>&lt;h1 id=&quot;nosql-db와-mongo-db&quot;&gt;NoSQL DB와 Mongo DB&lt;/h1&gt;
+</description>
+        
+        <pubDate>Wed, 23 Mar 2022 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/SpringBoot-MongoDB/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/SpringBoot-MongoDB/</guid>
+      </item>
+    
+	<item>
+		<title>Git origin url 변경하기 (소스트리, Fork, Git Bash)</title>
+        
+        
+            <description>&lt;p&gt;깃을 사용하다가, 키체인이 만료되었을 경우 이를 암호키 설정을 바꿔줘야하는데 3대 이상의 장비로 자주 작업을 바꾸다보니 이 과정도 꽤나 피로도가 쌓이는 작업이 되버렸습니다. 그래서 Git origin URL을 변경하는 방법으로 정착했는데 꽤 편리하더라구요.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 22 Mar 2022 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Git-RemoteUrl-Change/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Git-RemoteUrl-Change/</guid>
+      </item>
+    
+  </channel>
+</rss>
