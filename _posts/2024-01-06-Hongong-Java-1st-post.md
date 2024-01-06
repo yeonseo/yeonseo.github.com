@@ -73,6 +73,7 @@ int result = (int)var1 + (int)(var2 + var3) + (int)Double.parseDouble(var4)
 
 
 ### 🔗 링크링크
-혼공 게시판: https://hongong.hanbit.co.kr/%ed%98%bc%ea%b3%b5-%ea%b2%8c%ec%8b%9c%ed%8c%90/?uid=143&mod=document&pageid=1
 
-혼공 페북 그룹: https://www.facebook.com/groups/hongong
+💡 혼공 게시판: [https://hongong.hanbit.co.kr/%ed%98%bc%ea%b3%b5-%ea%b2%8c%ec%8b%9c%ed%8c%90/?uid=143&mod=document&pageid=1](https://hongong.hanbit.co.kr/%ed%98%bc%ea%b3%b5-%ea%b2%8c%ec%8b%9c%ed%8c%90/?uid=143&mod=document&pageid=1)
+
+💡 혼공 페북 그룹: [https://www.facebook.com/groups/hongong](https://www.facebook.com/groups/hongong)
