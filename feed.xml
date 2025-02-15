@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>읽거나, 보거나, 듣거나, 쓰거나</description>
+    <link>https://yeonseo.github.io</link>
+    <atom:link href="https://yeonseo.github.io/feed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>Fri, 24 Jan 2025 00:00:00 +0900</lastBuildDate>
+	
+	<item>
+		<title>React.StrictMode - React 애플리케이션의 품질을 향상시키는 도구</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-react에서-발생할-수-있는-잠재적-문제들&quot;&gt;&lt;strong&gt;1. 문제 정의: React에서 발생할 수 있는 잠재적 문제들&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;React 애플리케이션을 개발할 때, 개발 환경에서 미리 감지하지 않으면 &lt;strong&gt;비효율적인 렌더링, 예기치 않은 사이드 이펙트, 레거시 API 사용 문제&lt;/strong&gt; 등이 발생할 수 있다. 이런 문제를 방지하지 않으면 유지보수 비용이 증가하고, 사용자 경험이 저하될 가능성이 크다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 24 Jan 2025 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/React-StrictMode-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/React-StrictMode-post/</guid>
+      </item>
+    
+	<item>
+		<title>React에서의 State 개념 정리</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-react에서의-state-관리-왜-중요한가&quot;&gt;&lt;strong&gt;1. 문제 정의: React에서의 State 관리, 왜 중요한가?&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;React 애플리케이션을 개발할 때, &lt;strong&gt;State(상태) 관리&lt;/strong&gt;는 UI의 동적인 변화를 처리하는 핵심 요소이다. 그러나 프로젝트 규모가 커질수록 &lt;strong&gt;state가 어디에서 관리되고, 어떻게 변경되는지 예측하기 어려워지는 문제&lt;/strong&gt;가 발생한다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 09 Jan 2025 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/React-State-Manage-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/React-State-Manage-post/</guid>
+      </item>
+    
+	<item>
+		<title>개발자의 소통에 대한 고찰 - 기획과 개발 사이에서 길을 찾다</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-개발자는-왜-소통에-어려움을-겪을까&quot;&gt;&lt;strong&gt;1. 문제 정의: 개발자는 왜 소통에 어려움을 겪을까?&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;개발자는 종종 “기획을 따르는 사람”으로 여겨진다. 하지만 실제로 프로젝트를 진행하다 보면 기획이 개발 현실과 맞지 않거나, 비효율적인 방향으로 흐르는 경우가 많다.&lt;br /&gt;
+이 과정에서 &lt;strong&gt;“개발자는 기획을 따르기만 해야 하는가?”&lt;/strong&gt;라는 질문이 떠오른다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 12 Oct 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Developer-Frontend-Vue-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Developer-Frontend-Vue-post/</guid>
+      </item>
+    
+	<item>
+		<title>Vue 프로젝트 회고 - 처음부터 끝까지의 경험과 교훈</title>
+        
+        
+            <description>&lt;h1 id=&quot;vue-프로젝트-회고-처음부터-끝까지의-경험과-교훈&quot;&gt;&lt;strong&gt;Vue 프로젝트 회고: 처음부터 끝까지의 경험과 교훈&lt;/strong&gt;&lt;/h1&gt;
+</description>
+        
+        <pubDate>Tue, 10 Sep 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Developer-mindset-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Developer-mindset-post/</guid>
+      </item>
+    
+	<item>
+		<title>Kubernetes Ingress 413 오류 해결 과정과 최적화 전략</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-ingress를-통한-파일-업로드의-한계&quot;&gt;&lt;strong&gt;1. 문제 정의: Ingress를 통한 파일 업로드의 한계&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Kubernetes 환경에서 대용량 파일을 업로드하려 할 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;413 Payload Too Large&lt;/code&gt; 오류가 발생했다.&lt;br /&gt;
+로컬 환경에서는 정상 동작했지만, &lt;strong&gt;Ingress를 통한 요청만 차단되는 현상이 발생&lt;/strong&gt;했다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 28 May 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Kubernetes-Ingress-413-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Kubernetes-Ingress-413-post/</guid>
+      </item>
+    
+	<item>
+		<title>Spring Boot에서 ObjectMapper 최적화 - JSON 파싱 에러 해결 및 성능 개선</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-json-구조-변화와-400-bad-request-발생-spring-boot에서-objectmapper-최적화-json-파싱-오류-해결-및-역할별-구성-전략&quot;&gt;1. 문제 정의: JSON 구조 변화와 400 Bad Request 발생# &lt;strong&gt;Spring Boot에서 ObjectMapper 최적화: JSON 파싱 오류 해결 및 역할별 구성 전략&lt;/strong&gt;&lt;/h1&gt;
+</description>
+        
+        <pubDate>Thu, 09 May 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/SpringBoot-ObjectMapper-for-Flexiblility-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/SpringBoot-ObjectMapper-for-Flexiblility-post/</guid>
+      </item>
+    
+	<item>
+		<title>Spring 6 HTTP Interface 도입기</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-resttemplate과-webclient-정말-최선일까&quot;&gt;&lt;strong&gt;1. 문제 정의: RestTemplate과 WebClient, 정말 최선일까?&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Spring Boot에서 외부 API를 호출할 때, 전통적으로 &lt;strong&gt;RestTemplate&lt;/strong&gt; 또는 &lt;strong&gt;WebClient&lt;/strong&gt;를 사용해왔다.&lt;br /&gt;
+프로젝트를 WebClient를 주로 사용했고, 다음과 같은 문제를 경험했다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 10 Mar 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Spring6-HTTP-interface-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Spring6-HTTP-interface-post/</guid>
+      </item>
+    
+	<item>
+		<title>JWT 기반 Spring Security 인증 처리의 최적화 - 중복 핸들러 호출 문제 해결</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-왜-두-개의-예외-핸들러가-동시에-실행될까&quot;&gt;&lt;strong&gt;1. 문제 정의: 왜 두 개의 예외 핸들러가 동시에 실행될까?&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Spring Security를 활용하여 JWT 기반의 인증 및 권한 관리를 구현할 때, &lt;strong&gt;JWT 만료 시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JwtAuthenticationEntryPoint&lt;/code&gt;가 실행(401 Unauthorized)&lt;/strong&gt;, &lt;strong&gt;접근 권한 부족 시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JwtAccessDeniedHandler&lt;/code&gt;가 실행(403 Forbidden)&lt;/strong&gt; 되어야 한다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 06 Feb 2024 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/SpringSecurity-Error-Handler-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/SpringSecurity-Error-Handler-post/</guid>
+      </item>
+    
+	<item>
+		<title>Spring Boot 버전 업그레이드 후 예외 처리 방식 변화 대응기</title>
+        
+        
+            <description>&lt;h1 id=&quot;1-문제-정의-예외-핸들러가-무력화되다&quot;&gt;&lt;strong&gt;1. 문제 정의: 예외 핸들러가 무력화되다?!&lt;/strong&gt;&lt;/h1&gt;
+</description>
+        
+        <pubDate>Tue, 24 Oct 2023 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/SpringBoot-ExceptionHandler-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/SpringBoot-ExceptionHandler-post/</guid>
+      </item>
+    
+	<item>
+		<title>Git Rebase와 Merge는 언제 사용하면 좋은가</title>
+        
+        
+            <description>&lt;h1 id=&quot;사용하게-된-계기&quot;&gt;사용하게 된 계기&lt;/h1&gt;
+&lt;p&gt;혼자 진행중인 사이드 프로젝트가 있다. 회사에 대한 정보를 조회하는 간단한 프로젝트인데, 이슈를 생성하고 RP을 통해 깃 관리를 테스트해보고 싶은 마음에 만든 프로젝트다. 급한 마음에 이슈부터 호다닥 만들어 브랜치를 생성했는데, 아뿔싸! 프로젝트 기본 설정조차 제대로 만들지 않아서 main에서 변경이 일어났다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 11 Aug 2023 00:00:00 +0900</pubDate>
+        <link>https://yeonseo.github.io/posts/Git-Rebase-Merge-post/</link>
+        <guid isPermaLink="true">https://yeonseo.github.io/posts/Git-Rebase-Merge-post/</guid>
+      </item>
+    
+  </channel>
+</rss>
