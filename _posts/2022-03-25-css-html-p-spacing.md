@@ -2,9 +2,9 @@
 layout: post
 title: HTML 텍스트 나타낼 시, p 태그 간격주기
 description: ""
-tags: [css, FrontEnd, TIL, Today I Leaned]
+tags: [css, Frontend, TIL, Today I Leaned]
 comments : true
-category : [css]
+category : [Frontend, css]
 sitemap:
   changefreq: daily
   priority : 1.0

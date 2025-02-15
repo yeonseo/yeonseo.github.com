@@ -4,7 +4,7 @@ title: 스프링부트 (Spring Boot) Get 사용 시 Body관련
 description: ""
 tags: [Spring Boot, Kotlin, Web, Backend,TIL, Today I Leaned]
 comments : true
-category : [Spring, Spring Data JPA]
+category : [Backend, Spring Data JPA]
 sitemap:
   changefreq: daily
   priority : 1.0

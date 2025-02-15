@@ -2,9 +2,9 @@
 layout: post
 title: Axios errorHandler에서 요청 다시 보내기 (feat. Refreash Token을 받아보자)
 description: ""
-tags: [Vue3, Web, FrontEnd, TIL, Today I Leaned]
+tags: [Vue3, Web, Frontend, TIL, Today I Leaned]
 comments : true
-category : [FrontEnd, Vue, axios]
+category : [Frontend, Vue, axios]
 sitemap:
   changefreq: daily
   priority : 1.0

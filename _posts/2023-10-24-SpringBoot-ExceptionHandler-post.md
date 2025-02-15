@@ -1,70 +1,93 @@
 ---
 layout: post
-title: Spring Boot의 업그레이드 후 Exception Handler 이슈
-description: ""
+title: Spring Boot 버전 업그레이드 후 예외 처리 방식 변화 대응기
+description: "Spring Boot의 예외 처리 방식이 변화하면서 발생한 문제와 해결 과정 공유"
 tags: [Spring Boot, Spring, Kotlin, Web, Backend, TIL, Today I Leaned]
 comments : true
-category : [Spring]
+category : [Backend, Spring]
 sitemap:
   changefreq: daily
   priority : 1.0
 ---
 
 
-스프링 부트는 빠른 개발 속도와 확장성으로 인해 많은 프로젝트에서 선호되는 프레임워크 중 하나이다. 그런데 이런 장점에도 불구하고, 버전을 업그레이드 할 때 여러 가지 문제에 직면하게 되는데, 그 중 예외처리와 관련해 최근에 회사 프로젝트에서도 이러한 경험을 하게 되었다. 그 경험을 공유 및 기억하고자 기록합니다. 🤖
+# **1. 문제 정의: 예외 핸들러가 무력화되다?!**  
 
-<div class="space-item-5"></div>
+Spring Boot는 빠른 개발 속도와 확장성 덕분에 많은 프로젝트에서 널리 사용된다. 그러나 이러한 장점에도 불구하고, **버전 업그레이드 과정에서 기존 코드가 예상치 못한 방식으로 동작하는 경우**가 발생할 수 있다.  
 
-# 문제 발생
-팀 전체가 기존 프로젝트의 스프링 부트의 버전 업그레이드를 진행하고 나서 배포를 한 후, API 테스트를 진행하던 중 이상한 현상을 발견했다. 기존에 잘 동작하던 ExceptionHandler가 작동하지 않아, 예외 발생 시 항상 401 상태 코드만을 반환하고 있는 것... 하필 Server-to-Server 작업을 내가 맡아 아주 억울한 상황이었다. 그리고 프론트에선 서버로부터 코드와 에러메세지를 받아 보여주고 있기 때문에 (배포한다면) 이는 사용자에게 정확한 에러 메시지를 전달하지 못하는 문제가 발생하는 최악의 상황이었다.
-
-
-# 원인 파악
-먼저, ExceptionHandler의 로직에 문제가 있는지 확인하기 위해 코드를 상세히 살펴보았다. 레거시 프로젝트였고, 기존에 잘 돌아가던 코드였기 때문에 역시나 문제는 발견할 수 없었다. 코드는 클린 그 자체.
-
-![sad-dev](/post/images/hey/crying01.gif)
-
+이번 프로젝트에서도 **Spring Boot 버전 업그레이드 후 기존 예외 핸들러가 제대로 동작하지 않는 문제**를 경험했다.  
 
 <div class="space-item-3"></div>
 
 
-이후, 스프링 부트의 버전 업그레이드가 슬슬 의심되기 시작했고, 변경 로그와 문서를 찾아보면서 버전 업그레이드에 따른 변화점을 확인했다.
-
-그 결과, 스프링 부트의 버전 업그레이드에 따라 ExceptionHandler의 작동 방식에 변화가 생겼음을 알게되었다. 특히, 특정 예외 처리가 내부적으로 핸들링되면서 401 상태 코드가 반환되도록 변경되었던 것..!
 
 
-> 💡 스프링 부트 2.3 (Spring 기준 3.2) 이후로 오류 처리에 대한 주요 변경 사항
->
-> ErrorAttributes 및 관련 인터페이스의 주요 변경 사항과 함께 새로운 ErrorController 구현이 도입되었습니다.
-> 
-> 🤖 에러 핸들러 사용:
-> Spring Boot에서는 @ControllerAdvice와 @ExceptionHandler 어노테이션을 사용하여 전역 에러 핸들러를 구현할 수 있습니다.
+# **2. 문제 발생: 예외 발생 시 무조건 401 반환**  
 
+Spring Boot를 최신 버전으로 업그레이드한 후 배포를 진행했고, API 테스트를 수행하는 과정에서 이상한 현상이 발견되었다.  
 
-<div class="space-item-3"></div>
+✅ **기존 동작:**  
+- `@ExceptionHandler`가 정상적으로 예외를 처리하고, 적절한 HTTP 상태 코드 및 메시지를 반환  
 
-** 참고 문서 **
+❌ **문제 발생 후:**  
+- 예외 발생 시 무조건 **401 Unauthorized** 응답이 반환됨  
+- `@ExceptionHandler`가 무시되고, 기본 Spring Security 예외 처리 흐름이 적용됨  
 
-https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ControllerAdvice.html
+> 📌 **Server-to-Server API 개발을 담당하고 있었기에, 이 문제가 더욱 치명적으로 다가왔다.**  
+> 클라이언트는 서버에서 내려오는 HTTP 상태 코드와 메시지를 기반으로 오류를 처리하는데,  
+> **모든 오류가 401로 반환되면서 프론트엔드와의 통신에도 혼란이 발생**했다.  
 
-https://www.baeldung.com/exception-handling-for-rest-with-spring
-
+![crying-dev](/post/images/hey/crying01.gif)  
 
 <div class="space-item-3"></div>
 
+
+
+
+# **3. 원인 분석: Spring Boot 예외 처리 방식의 변화**  
+
+🚀 **1️⃣ 예외 처리 로직 확인**  
+먼저, 기존 `@ExceptionHandler`의 코드가 정상적으로 동작하는지 검토했다.  
+- ✅ 예외 핸들러 코드 자체에는 문제 없음  
+- ✅ 예외 발생 시, `@ExceptionHandler`가 실행되지 않음  
+
+🚀 **2️⃣ Spring Boot 변경 사항 조사**  
+Spring Boot의 공식 문서를 확인하면서, **버전 업그레이드 과정에서 예외 처리 방식에 변화가 있었음을 발견**했다.  
+
+📌 **Spring Boot 2.3 (Spring 5.2) 이후 주요 변경 사항**  
+- `ErrorAttributes` 및 관련 인터페이스 변경  
+- 새로운 `ErrorController` 구현 도입  
+- 일부 인증 관련 예외는 `Spring Security`에서 자동으로 처리하도록 변경  
+
+📌 **결론:**  
+✅ **Spring Boot의 예외 처리 방식이 변화하면서, 기존 `@ExceptionHandler`가 동작하지 않게 된 것!**  
+✅ **특정 인증 관련 예외가 내부적으로 핸들링되면서, 401 상태 코드가 자동으로 반환됨!**  
+
+> ⚠ **기존 `@ExceptionHandler`가 동작하지 않는 이유:**  
+> - Spring Security에서 특정 예외 (`AuthenticationException`, `AccessDeniedException`)를 자동으로 처리  
+> - 기존 예외 핸들러가 호출되기 전에 Security 필터에서 응답을 가로챔  
+
 <div class="space-item-3"></div>
 
-# 해결 과정
-할 수 있는 해결 방법은 두 가지였습니다.
-
-1. 예외 처리 방식을 스프링 부트의 새로운 버전에 맞게 수정
-2. 기존의 ExceptionHandler 방식을 유지하도록 설정 변경
 
 
-현재 스프링 부트의 버전에 맞게 수정되어야 하는 것이 앞으로의 유지보수에도 좋고, 보다 사용자에게 명확한 에러 메시지를 전달하기 위해 첫 번째 방법을 선택하고 작업을 진행했다.  `GlobalExceptionHandler`를 적용하기 위해 `@ControllerAdvice`와 `@ExceptionHandler`를 사용하여 구현했다.
+
+# **4. 해결 방법: Spring Boot 최신 예외 처리 방식 적용**  
+
+🚀 **해결 방법은 두 가지였다.**  
+1️⃣ **Spring Boot 최신 예외 처리 방식에 맞게 코드 수정**  
+2️⃣ **기존 방식(`@ExceptionHandler`)을 유지할 수 있도록 설정 변경**  
+
+📌 유지보수성과 확장성을 고려했을 때,  
+✅ **첫 번째 방법**(Spring Boot의 최신 방식에 맞춰 예외 처리 방식을 수정) 을 선택하여 해결했다.  
 
 
-```kt
+
+### **🔹 해결 코드: `GlobalExceptionHandler` 적용**  
+
+📌 **Spring Boot 최신 버전에 맞게 예외 처리를 적용한 코드**  
+
+```kotlin
 class ResponseException(val statusCode: Int, val errorMessage: String) : RuntimeException("$statusCode: $errorMessage")
 
 @ControllerAdvice
@@ -76,50 +99,81 @@ class GlobalExceptionHandler {
         return ResponseEntity(ex.errorMessage, headers, HttpStatus.valueOf(ex.statusCode))
     }
 }
-
 ```
 
+### **🔹 `ResponseException` 클래스**
+- **커스텀 예외 클래스**  
+- `statusCode`: HTTP 상태 코드  
+- `errorMessage`: 사용자에게 전달할 메시지  
 
-### ResponseException 클래스:
-
-ResponseException은 커스텀 예외 클래스로, statusCode와 errorMessage 두 개의 필드를 포함 (실제 코드에서는 예외 발생 케이스를 Enum으로 관리하고 있다)
-
-statusCode: 해당 예외에 대한 HTTP 상태 코드
-
-errorMessage: 사용자에게 전달할 에러 메시지
-
-## GlobalExceptionHandler 클래스:
-
-`@ControllerAdvice` 어노테이션을 통해 전역적인 예외 핸들러로 동작
-
-`handleResponseException` 메서드에서는 `ResponseException`이 발생할 경우 해당 메서드로 예외를 핸들링한다. 예외 정보를 기반으로 HTTP 헤더와 함께 응답을 return한다.
-
+### **🔹 `GlobalExceptionHandler` 클래스**
+- **`@ControllerAdvice`**: 전역 예외 처리를 담당  
+- **`@ExceptionHandler(ResponseException::class)`**: `ResponseException` 발생 시 처리  
+- **HTTP 상태 코드와 에러 메시지를 함께 반환**  
 
 <div class="space-item-3"></div>
 
+
+
+# **5. 기술적 인사이트: Spring Boot의 최신 예외 처리 흐름**  
+
+🚀 **Spring Boot 최신 예외 처리 방식 정리**  
+
+✅ **Spring Boot 2.3 이후 주요 변경 사항**  
+1️⃣ **기본 예외 처리 로직 변경**  
+   - `ErrorAttributes` 및 `ErrorController`가 내부적으로 동작 방식 수정  
+   - 일부 예외는 `Spring Security`에서 자동 처리  
+   
+2️⃣ **Spring Security와 예외 처리 충돌 문제 해결**  
+   - Security 필터에서 예외가 먼저 처리되므로, `@ExceptionHandler`가 무시될 가능성 있음  
+   - `@ControllerAdvice`에서 명확하게 예외를 처리하도록 변경  
+
+3️⃣ **전역 예외 처리의 중요성**  
+   - 단순한 API 오류뿐만 아니라, 인증 및 권한 관련 예외도 직접 처리할 필요가 있음  
+   - 보안 정책을 명확히 정의하고, 불필요한 Security 예외 핸들링을 줄이는 것이 핵심  
+
+📌 **결론:**  
+✅ **Spring Boot의 예외 처리 방식을 정확히 이해하고 대응해야 한다.**  
+✅ **특히, 보안과 관련된 예외는 Security 필터에서 먼저 처리됨을 고려해야 한다.**  
+
 <div class="space-item-3"></div>
 
-# 마치며
-이 경험을 통해 스프링 부트와 같은 프레임워크의 버전 업그레이드는 항상 주의 깊게 진행해야 함을 다시 한번 깨달았다. 특히, 변경 로그와 Spring 문서를 평소에도 읽어두는 습관에 대한 필요성을 느꼈다. 그랬다면 ExceptionHandler의 작동 방식의 변화를 인지하고 좀 더 빠르게 해결로 갔을 지도.. 이번 문제 해결 과정을 통해 업그레이드에 대응하는 방법을 배웠고, 이를 다음에 유사한 상황이 발생할 때 빠르게 대처할 수 있는 통찰력을 얻었다. 앞으로도 이러한 경험을 바탕으로 더욱 성장하고, 항상 변경사항에 대비하는 개발자로 성장하기 위해 노력하겠다.
 
 
 
-<details>
-<summary>정상 응답 확인 후기</summary>
-<div markdown="1">
+# **6. 결론: 버전 업그레이드 대응 전략**  
 
-![thanks-for-check](/post/images/2023-10-23-reply.png)
+✔ **이슈 해결 후 효과**  
+- 예외 처리 로직이 정상적으로 동작하도록 복구됨  
+- 로그 분석 및 디버깅이 쉬워짐  
+- API 클라이언트(프론트엔드)와의 예외 처리 통신이 안정적으로 이루어짐  
 
-바로 확인해주신 동료님..! 감사함미동..
-
-</div>
-</details>
-
-
+📌 **Spring Boot 기반 애플리케이션에서 예외 처리를 설계할 때 고려할 점**  
+1️⃣ **Spring Boot 버전 업그레이드 시 변경 로그를 꼭 확인하자.**  
+2️⃣ **예외 처리 방식이 Security 필터와 충돌하는지 점검하자.**  
+3️⃣ **`@ExceptionHandler`만으로 해결되지 않는 경우, Security 예외 처리 흐름을 확인하자.**  
 
 <div class="space-item-3"></div>
 
-### 예외처리 관련 공식 페이지
-> https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ControllerAdvice.html
-> 
-> https://www.baeldung.com/exception-handling-for-rest-with-spring
+
+
+# **7. 마치며: 버전 업그레이드는 예외 처리까지 고려하자!**  
+
+이 경험을 통해 **Spring Boot와 같은 프레임워크의 버전 업그레이드는 단순히 코드 변경만이 아니라, 예외 처리 방식까지 고려해야 한다**는 점을 다시 한번 깨달았다.  
+
+특히, **변경 로그(Changelog)와 공식 문서를 미리 확인하는 습관이 중요하다.**  
+그랬다면 이번 문제도 더 빠르게 해결할 수 있었을지도…  
+
+이번 문제 해결 과정을 통해,  
+✅ **버전 업그레이드 대응 능력**  
+✅ **Spring Security와 예외 처리의 관계 이해**  
+✅ **전역 예외 처리 패턴 적용 능력**  
+을 모두 배울 수 있었다.  
+
+앞으로도 이러한 경험을 바탕으로 **더욱 성장하는 개발자**가 되고자 한다. 🚀  
+
+---
+
+### **🔍 예외 처리 관련 공식 문서**  
+📌 https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ControllerAdvice.html  
+📌 https://www.baeldung.com/exception-handling-for-rest-with-spring  

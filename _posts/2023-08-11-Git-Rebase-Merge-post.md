@@ -4,7 +4,7 @@ title: Git Rebase와 Merge는 언제 사용하면 좋은가
 description: ""
 tags: [Git, rebase vs merge, TIL, Today I Leaned]
 comments : true
-category : [Git]
+category : [Tool, Git]
 sitemap:
   changefreq: daily
   priority : 1.0

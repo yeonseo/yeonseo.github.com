@@ -4,7 +4,7 @@ title: Git origin url 변경하기 (소스트리, Fork, Git Bash)
 description: ""
 tags: [Git, TIL, Today I Leaned]
 comments : true
-category : [Git]
+category : [Tool, Git]
 sitemap:
   changefreq: daily
   priority : 1.0
