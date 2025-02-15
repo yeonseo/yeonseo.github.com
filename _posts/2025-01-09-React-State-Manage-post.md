@@ -24,20 +24,21 @@ React 애플리케이션을 개발할 때, **State(상태) 관리**는 UI의 동
 
 
 
+
 # **2. 원인 분석: React에서 State가 동작하는 방식**
 React에서 State는 **컴포넌트의 UI를 결정하는 동적인 데이터**이며, 특정 조건에서 변경될 때마다 **리렌더링을 트리거**한다.
 
 ### **🔹 React의 기본적인 State 동작 방식**
 1️⃣ **State 선언 (`useState`)**  
-   - `useState`를 사용하여 컴포넌트 내부에서 상태를 선언하고 관리함.
-   - 상태가 변경되면 해당 컴포넌트가 다시 렌더링됨.
+   - `useState`를 사용하여 컴포넌트 내부에서 상태를 선언하고 관리함
+   - 상태가 변경되면 해당 컴포넌트가 다시 렌더링됨
 
 2️⃣ **State 업데이트 (`setState`)**  
-   - `setState`를 호출하면, React는 새로운 state를 설정하고, UI를 다시 렌더링함.
-   - React 18부터는 **자동 배칭(Automatic Batching)**이 적용되어 여러 개의 `setState` 호출이 하나의 렌더링으로 최적화됨.
+   - `setState`를 호출하면, React는 새로운 state를 설정하고, UI를 다시 렌더링함
+   - React 18부터는 **자동 배칭(Automatic Batching)**이 적용되어 여러 개의 `setState` 호출이 하나의 렌더링으로 최적화됨
 
 3️⃣ **Reconciliation 과정에서 Virtual DOM 비교**  
-   - 변경된 State를 기반으로 새로운 Virtual DOM을 생성하고, 이전 Virtual DOM과 비교(diffing)하여 최소한의 DOM 업데이트 수행.
+   - 변경된 State를 기반으로 새로운 Virtual DOM을 생성하고, 이전 Virtual DOM과 비교(diffing)하여 최소한의 DOM 업데이트 수행
 
 📌 **그러나, 규모가 커질수록 상태 관리가 복잡해지는 문제 발생!**  
 ➡ **로컬 상태 vs. 전역 상태 vs. 서버 상태를 구분하여 관리해야 함.**

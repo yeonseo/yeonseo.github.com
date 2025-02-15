@@ -39,7 +39,7 @@ React.StrictMode는 **개발 환경에서만 실행되는 도구**로, 애플리
 
 📌 **React 18 & 19에서 StrictMode의 주요 변화**
 ✅ **React 18:** Concurrent Rendering 환경에서 `StrictMode`가 **마운트된 컴포넌트를 자동으로 언마운트 후 다시 마운트**하여 메모리 누수를 감지한다.
-✅ **React 19:** `useOptimistic`, `useActionState` 등의 새로운 상태 관리 기능이 추가되면서, `StrictMode`가 더욱 강력하게 상태 흐름을 검증할 수 있도록 개선됨.
+✅ **React 19:** `useOptimistic`, `useActionState` 등의 새로운 상태 관리 기능이 추가되면서, `StrictMode`가 더욱 강력하게 상태 흐름을 검증할 수 있도록 개선되었다.
 
 <div class="space-item-3"></div>
 
@@ -67,6 +67,7 @@ root.render(
   </React.StrictMode>
 );
 ```
+
 ➡️ **개발 환경에서만 동작하며, 프로덕션 환경에서는 무시됨!**
 
 ### **✅ 2) 특정 컴포넌트에서만 StrictMode 적용**
