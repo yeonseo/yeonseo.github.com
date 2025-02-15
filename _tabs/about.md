@@ -4,47 +4,102 @@ icon: fas fa-info
 order: 4
 ---
 
+### **About Me | 남연서, 소통하는 프론트엔드 개발자**  
 
-# 2020.05 ~ 재직 || BlockChaninGolbal
-### 개발팀 / 풀스택
+안녕하세요, 프론트엔드(풀..) 개발자 **남연서**입니다.  
+저는 단순히 코드를 작성하는 개발자가 아니라, **사용자 경험(UX), 비즈니스 로직, 그리고 협업의 최적점을 찾는 개발자**입니다.  
 
+---
+
+### **🚀 개발자로서의 가치관**  
+**"코드를 넘어, 사용자와 팀을 연결하는 개발자가 되자."**  
+기술적인 깊이는 물론 중요하지만, 저는 **기획자, 디자이너, 백엔드 개발자와의 협업을 가장 중요하게 생각하는 개발자**입니다.  
+기획이 개발과 맞지 않거나, 사용자의 경험을 저해하는 방향으로 흐를 때, 저는 **문제를 정의하고, 해결책을 제안하는 역할**을 맡아왔습니다.  
+
+**소통의 힘을 믿습니다.**  
+- 기획이 갑작스럽게 변경될 때, **개발자도 기획을 제안할 수 있어야 한다고 생각합니다.**  
+- "이 방식은 어렵습니다"가 아니라, **"이런 방식으로 개선하면 더 효과적입니다"**라고 말할 수 있는 개발자가 되고자 합니다.  
+- 좋은 개발은 코드만으로 이루어지지 않습니다. **좋은 협업과 커뮤니케이션이 곧 좋은 결과물을 만듭니다.**  
+
+---
+
+### **💡 나의 핵심 역량**  
+✅ **Vue.js를 활용한 UI/UX 개선**  
+- 디자인 시스템을 구축하고 **재사용 가능한 컴포넌트 설계** 경험  
+- 성능 최적화를 통한 사용자 경험 향상 (코드 스플리팅, Lazy Loading, API 최적화)  
+- SSR (Server-Side Rendering) 및 CSR (Client-Side Rendering) 최적화  
+
+✅ **문제 해결을 위한 개발**  
+- **비즈니스 목표를 고려한 개발**을 지향 (단순한 기능 구현이 아닌, 효과적인 구현)  
+- 기획 변경 및 문제 발생 시, **개발자 주도적으로 대안을 제시**  
+- 개발자가 기획에 적극적으로 참여할 수 있는 환경을 만들어 가는 것에 관심  
+
+✅ **소통을 통한 협업**  
+- 기획/디자인/백엔드 개발자와 원활한 커뮤니케이션  
+- 코드 리뷰와 지식 공유를 통해 **더 좋은 코드와 시스템을 만드는 과정**을 중요하게 생각  
+
+---
+
+### **🌍 목표하는 개발자상**  
+✔️ **사용자의 입장에서 고민하는 개발자**  
+✔️ **기획, 디자인, 개발이 원활하게 연결되는 환경을 만드는 개발자**  
+✔️ **기술을 비즈니스와 연결하여, 최적의 솔루션을 고민하는 개발자**  
+
+블로그에서는 **프론트앤드에 국한되지 않는 개발 이야기, 협업 경험, 개발자로서의 성장 과정**을 공유할 예정입니다.  
+더 나은 개발자로 성장하는 여정을 함께하고 싶다면, 자주 들러 주세요! 🚀✨
 
 <div class="space-item-6"></div>
 
 ---
+# 📌 Career | 경력 사항
 
-## Resume9
+## 🔹 주식회사 블록체인글로벌 | 프론트엔드 개발자 (대리) | 2020.05 - 2024.08
+💼 주요 업무: Vue.js 기반 프론트엔드 개발, UI/UX 최적화, 디자인 시스템 구축, API 연동, 관리자 백오피스 개발
 
-### 모바일웹 개발 - Kotlin&Spring Boot / VueJS / React Native
+### ✔ 조각 투자 플랫폼(채권, 부동산) 프론트엔드 구축 및 고도화
 
-> 2020. 07 ~ 2021. 09
-
-[resume9](https://www.resume9.co.kr/user/support/notice)
-
-![](/post/images/2021_resume9_01.png)
-
-<div class="space-item-2"></div>
-
-![](/post/images/2021_resume9_02.png)
-
-<div class="space-item-2"></div>
-
-![](/post/images/2021_resume9_03.png)
-
-
-<div class="space-item-6"></div>
-
----
-## FundBlcok
-### 모바일웹 개발 - Kotlin&Spring Boot / VueJS / React Native
-> 2021.11 ~ 현재
+Vue.js를 활용한 SPA(Single Page Application) 기반 프론트엔드 개발
+관리자 서비스 총괄 개발 (Spring Boot Security 기반 접근 권한 관리)
+디자인 시스템 적용 및 UI/UX 개선 (CSS, SCSS)
+쿠버네티스, Docker, Git을 활용한 CI/CD 및 배포 자동화
+HTTP Interface 기반 서버-서버 연동 구축
 
 [fundbloc Android](https://play.google.com/store/apps/details?id=com.fundbloc.funble)
 
-![](/post/images/2022_funble_01.png)
 
-![](/post/images/2022_funble_02.png)
+### ✔ 펀블 (부동산 조각거래소) 신규 구축
 
-![](/post/images/2022_funble_03.png)
+회원 인증 및 투자자격 검증 기능 개발 (NICE 인증 연동)
+관리자 백오피스 개발 (Vue.js + Spring Boot)
+대시보드 및 데이터 시각화 UI 개발
 
-![](/post/images/2022_funble_04.png)
+### ✔ Resume9 (R9) 헤드헌터 플랫폼 개발
+
+Vue.js 기반 헤드헌터 커뮤니티 기능 개발 (We펌)
+프론트엔드 날짜 기능 모듈화 (vue-datetime 활용)
+Tiptap을 활용한 게시판 에디터 모듈화 개발
+
+[resume9](https://www.resume9.co.kr/user/support/notice)
+
+
+### ✔ KCX 코인 거래소 신규 구축 및 고도화
+
+키움증권과 협업하여 프론트엔드 고도화 및 UI/UX 개선
+AWS S3 기반 이미지 업로드 기능 개발
+코드 리팩토링 및 유지보수성 개선
+
+
+## 🔹 주식회사 머스트핀테크 | 프론트엔드 개발자 (사원) | 2020.03 - 2020.05
+💼 주요 업무: 핀테크 플랫폼 기능 고도화, 로직 최적화
+
+### ✔ 핀테크 서비스 기능 개선 및 오류 수정
+
+이자 계산 오류 수정 및 백엔드 API 최적화
+사용자 대시보드 UI 개선
+
+# 📌 Tech Stack
+✅ Frontend: Vue.js, React, TypeScript, JavaScript(ES6+), HTML5, CSS(SCSS, Tailwind)
+✅ State Management: Vuex, Pinia, Redux Toolkit
+✅ Backend & API: Spring Boot, JPA, GraphQL, RESTful API
+✅ DevOps: Git, GitHub, Docker, Kubernetes, AWS (S3, EC2, RDS)
+✅ Collaboration Tools: Jira, Confluence, Slack, Figma
