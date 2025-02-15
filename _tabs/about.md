@@ -1,17 +1,18 @@
 ---
-title: About
+title: About Me 🤗
 icon: fas fa-info
 order: 4
 ---
 
-### **About Me | 남연서, 소통하는 프론트엔드 개발자**  
+### **남연서 | 소통하는 프론트엔드 개발자**  
 
 안녕하세요, 프론트엔드(풀..) 개발자 **남연서**입니다.  
 저는 단순히 코드를 작성하는 개발자가 아니라, **사용자 경험(UX), 비즈니스 로직, 그리고 협업의 최적점을 찾는 개발자**입니다.  
 
 ---
 
-### **🚀 개발자로서의 가치관**  
+### **🚀 개발자로서의 가치관**
+
 **"코드를 넘어, 사용자와 팀을 연결하는 개발자가 되자."**  
 기술적인 깊이는 물론 중요하지만, 저는 **기획자, 디자이너, 백엔드 개발자와의 협업을 가장 중요하게 생각하는 개발자**입니다.  
 기획이 개발과 맞지 않거나, 사용자의 경험을 저해하는 방향으로 흐를 때, 저는 **문제를 정의하고, 해결책을 제안하는 역할**을 맡아왔습니다.  
@@ -23,7 +24,8 @@ order: 4
 
 ---
 
-### **💡 나의 핵심 역량**  
+### **💡 나의 핵심 역량**
+
 ✅ **Vue.js를 활용한 UI/UX 개선**  
 - 디자인 시스템을 구축하고 **재사용 가능한 컴포넌트 설계** 경험  
 - 성능 최적화를 통한 사용자 경험 향상 (코드 스플리팅, Lazy Loading, API 최적화)  
@@ -40,7 +42,8 @@ order: 4
 
 ---
 
-### **🌍 목표하는 개발자상**  
+### **🌍 목표하는 개발자상**
+
 ✔️ **사용자의 입장에서 고민하는 개발자**  
 ✔️ **기획, 디자인, 개발이 원활하게 연결되는 환경을 만드는 개발자**  
 ✔️ **기술을 비즈니스와 연결하여, 최적의 솔루션을 고민하는 개발자**  
@@ -51,6 +54,7 @@ order: 4
 <div class="space-item-6"></div>
 
 ---
+
 # 📌 Career | 경력 사항
 
 ## 🔹 주식회사 블록체인글로벌 | 프론트엔드 개발자 (대리) | 2020.05 - 2024.08
@@ -64,14 +68,13 @@ Vue.js를 활용한 SPA(Single Page Application) 기반 프론트엔드 개발
 쿠버네티스, Docker, Git을 활용한 CI/CD 및 배포 자동화
 HTTP Interface 기반 서버-서버 연동 구축
 
-[fundbloc Android](https://play.google.com/store/apps/details?id=com.fundbloc.funble)
-
-
 ### ✔ 펀블 (부동산 조각거래소) 신규 구축
 
 회원 인증 및 투자자격 검증 기능 개발 (NICE 인증 연동)
 관리자 백오피스 개발 (Vue.js + Spring Boot)
 대시보드 및 데이터 시각화 UI 개발
+
+[fundbloc Android](https://play.google.com/store/apps/details?id=com.fundbloc.funble)
 
 ### ✔ Resume9 (R9) 헤드헌터 플랫폼 개발
 
@@ -88,6 +91,7 @@ Tiptap을 활용한 게시판 에디터 모듈화 개발
 AWS S3 기반 이미지 업로드 기능 개발
 코드 리팩토링 및 유지보수성 개선
 
+---
 
 ## 🔹 주식회사 머스트핀테크 | 프론트엔드 개발자 (사원) | 2020.03 - 2020.05
 💼 주요 업무: 핀테크 플랫폼 기능 고도화, 로직 최적화
@@ -97,9 +101,15 @@ AWS S3 기반 이미지 업로드 기능 개발
 이자 계산 오류 수정 및 백엔드 API 최적화
 사용자 대시보드 UI 개선
 
+---
+
 # 📌 Tech Stack
 ✅ Frontend: Vue.js, React, TypeScript, JavaScript(ES6+), HTML5, CSS(SCSS, Tailwind)
+
 ✅ State Management: Vuex, Pinia, Redux Toolkit
+
 ✅ Backend & API: Spring Boot, JPA, GraphQL, RESTful API
+
 ✅ DevOps: Git, GitHub, Docker, Kubernetes, AWS (S3, EC2, RDS)
+
 ✅ Collaboration Tools: Jira, Confluence, Slack, Figma
